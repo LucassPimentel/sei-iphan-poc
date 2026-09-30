@@ -1,0 +1,5 @@
+{
+  "descricao": "Unidades de TRIAGEM da CGLic que abrem demanda de analise no fluxo do licenciamento (FLUXOS.md secao 9; IN IPHAN 06/2025). O despacho emitido por uma destas unidades declara qual instrumento sera analisado e liga-se ao parecer do componente que o atende (criterio 4 do especialista: 'demanda da triagem'). Lista mantida como DADO auditavel, nao hardcoded no codigo. Comparacao feita por sigla NORMALIZADA (maiusculas, sem espacos ao redor); casa por igualdade ou por prefixo (ex.: 'CAIP-CGM' casa 'CGM' e 'CAIP').",
+  "fonte": "FLUXOS.md secao 9 (CGLic -> CAIP, CGM, CAIP-CGM, DAP, DIVGEO, CORA, DINO). Restringimos as que efetivamente fazem TRIAGEM/abrem demanda, observadas nos processos: CGM, CAIP-CGM, CAIP.",
+  "unidades_triagem": ["CGM", "CAIP-CGM", "CAIP"]
+}

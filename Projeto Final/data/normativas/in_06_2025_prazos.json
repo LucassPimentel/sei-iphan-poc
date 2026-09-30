@@ -1,0 +1,80 @@
+{
+  "descricao": "Prazos normativos da IN IPHAN nº 06/2025, estruturados como DADO (nao hardcoded no codigo), para a etapa de calculo de prazos (09_prazos.R) e a analise de conformidade. Transcrito fielmente da secao 7 de FLUXOS.md (especificacao do especialista). NAO inventar prazos: quando um caso nao constar aqui, registrar a limitacao.",
+  "fonte": "IN IPHAN nº 06/2025",
+  "referencia_documento": "FLUXOS.md (secao 7)",
+  "versao": "1.2",
+  "nota_versao": "v1.2: CORRECAO apos validacao contra o texto integral da IN 06/2025 (docs/INSTRUCAO-NORMATIVA-IPHAN-No-6...doc). PAPIPA (art. 25, Nivel IV) NAO e sinonimo do PAIPA (art. 23, Nivel III): sao pecas distintas. O art. 51, II fixa 30 dias apenas para PAIPAs; nao lista PAPIPA. Portanto PAPIPA foi movido para peca PROPRIA com prazo de analise INDETERMINADO (sem_prazo_normativo=true) — nao inventar prazo. Mantidos como sinonimos DIRETOS (origem 'IN 06/2025 sec. 7', art. 51) apenas: RAIPA/RAPIPA/RAA -> 'Relatorios de avaliacao...' (art. 51, VII); PAA -> 'Projeto de Acompanhamento Arqueologico' (art. 51, II). v1.1 havia equiparado PAPIPA ao PAIPA por interpretacao — revertido.",
+  "regra_contagem": {
+    "unidade": "dias_consecutivos",
+    "observacao": "Todos os prazos sao contados em dias consecutivos (corridos), NAO em dias uteis.",
+    "base": "art. 54"
+  },
+  "encerramento_do_ato": {
+    "criterio": "data_ultima_assinatura",
+    "observacao": "Quando aplicavel, considerar a data da ultima assinatura do parecer como encerramento do ato, confrontada com a data-limite fixada pela CGM."
+  },
+  "analise_de_pecas": {
+    "descricao": "Prazos para a Administracao (IPHAN) analisar cada peca. Base: art. 51.",
+    "base": "art. 51",
+    "itens": [
+      { "peca": "FCA", "prazo_dias": 15, "prorrogavel": false, "base": "art. 51, I" },
+      { "peca": "TCE", "prazo_dias": 15, "prorrogavel": false, "base": "art. 51, I" },
+      { "peca": "PAIPA", "prazo_dias": 30, "prorrogavel": true, "base": "art. 51, II",
+        "observacao": "Projeto de Avaliacao de Impacto ao Patrimonio Arqueologico (Nivel III, art. 23). Listado explicitamente no art. 51, II." },
+      { "peca": "PAPIPA", "prazo_dias": null, "prorrogavel": null, "base": "art. 25",
+        "sem_prazo_normativo": true,
+        "observacao": "Projeto de Avaliacao de POTENCIAL de Impacto ao Patrimonio Arqueologico (Nivel IV, art. 25). E peca DISTINTA do PAIPA. O art. 51 NAO fixa prazo de analise de projeto para o PAPIPA; portanto o prazo de analise permanece INDETERMINADO (nao inventar). Registrar a limitacao." },
+      { "peca": "Projeto de Acompanhamento Arqueologico", "prazo_dias": 30, "prorrogavel": true, "base": "art. 51, II",
+        "sinonimos": [
+          { "termo": "PAA", "origem": "IN 06/2025 sec. 7",
+            "observacao": "Parecer PAA Proj/Acomp/Arq refere-se ao Projeto de Acompanhamento Arqueologico (Nivel II)." }
+        ] },
+      { "peca": "PGBIR", "prazo_dias": 30, "prorrogavel": true, "base": "art. 51" },
+      { "peca": "PGPM", "prazo_dias": 30, "prorrogavel": true, "base": "art. 51" },
+      { "peca": "Inclusao de Projeto de Salvamento ou de Preservacao in situ (Nivel II)", "prazo_dias": 15, "prorrogavel": false, "base": "art. 51" },
+      { "peca": "Inclusao de projeto de salvamento durante preservacao in situ", "prazo_dias": 15, "prorrogavel": false, "base": "art. 51" },
+      { "peca": "Inclusao de projeto de preservacao in situ durante salvamento", "prazo_dias": 15, "prorrogavel": false, "base": "art. 51" },
+      { "peca": "Substituicao do arqueologo coordenador de campo", "prazo_dias": 15, "prorrogavel": false, "base": "art. 51" },
+      { "peca": "Relatorios de avaliacao de impacto, de acompanhamento e de gestao", "prazo_dias": 30, "prorrogavel": true, "base": "art. 51, VII",
+        "sinonimos": [
+          { "termo": "RAIPA", "origem": "IN 06/2025 sec. 7",
+            "observacao": "Relatorio de Avaliacao de Impacto ao Patrimonio Arqueologico (Nivel III)." },
+          { "termo": "RAPIPA", "origem": "IN 06/2025 sec. 7",
+            "observacao": "Relatorio de avaliacao de impacto (Nivel IV)." },
+          { "termo": "RAA", "origem": "IN 06/2025 sec. 7",
+            "observacao": "Relatorio de Acompanhamento Arqueologico (Nivel II)." }
+        ] },
+      { "peca": "Dados complementares", "prazo_dias": 15, "prorrogavel": true, "base": "art. 51" }
+    ]
+  },
+  "complementacao": {
+    "descricao": "Dois relogios distintos que NAO se somam. O tempo de resposta do interessado nao conta como atraso do orgao; a apuracao os mantem separados.",
+    "regra_unica": {
+      "observacao": "A solicitacao de complementacao deve abordar todos os aspectos de uma vez e ser feita uma unica vez; nao atendida, pode ser reiterada uma unica vez; nao atendida a reiteracao, o processo pode ser arquivado com informacao ao orgao licenciador.",
+      "base": ["art. 51, §3º", "art. 52", "art. 52, §2º", "art. 52, §3º"]
+    },
+    "arquivamento": {
+      "observacao": "O arquivamento nao impede novo requerimento, desde que nao haja alteracao projetual e nao tenham transcorrido dois anos.",
+      "base": "art. 52, §4º"
+    },
+    "relogios": [
+      { "relogio": "Administracao analisa a complementacao", "prazo_dias": 15, "prorrogavel": true, "prorrogacao": "por igual periodo", "base": "art. 51, VIII" },
+      { "relogio": "Interessado apresenta a complementacao", "prazo_dias": 30, "prorrogavel": false, "base": "art. 52, §1º" }
+    ]
+  },
+  "manifestacao_conclusiva": {
+    "descricao": "Prazos de manifestacao conclusiva para fins de licenca ambiental. A portaria NAO equivale a manifestacao conclusiva (art. 58): sao eventos distintos.",
+    "itens": [
+      { "fase": "Viabilidade locacional, com EIA/RIMA", "prazo_dias": 90, "base": "art. 62" },
+      { "fase": "Viabilidade locacional, demais casos", "prazo_dias": 30, "base": "art. 62" },
+      { "fase": "Instalacao", "prazo_dias": 60, "base": "art. 65" },
+      { "fase": "Operacao", "prazo_dias": 60, "base": "art. 68" }
+    ]
+  },
+  "outros_prazos": [
+    { "situacao": "Manifestacao apos comunicacao de achado arqueologico", "prazo_dias": 15, "base": ["art. 21", "art. 35", "art. 38, p.u."] },
+    { "situacao": "Substituicao de arqueologo coordenador: manifestacao e publicacao", "prazo_dias": 15, "base": "art. 47, §3º" },
+    { "situacao": "Relatorio do arqueologo que se desliga", "prazo_dias": 30, "base": "art. 47, §2º" },
+    { "situacao": "Validade do TRE", "prazo_dias": 730, "prazo_descricao": "2 anos", "prorrogavel": true, "prorrogacao": "mediante solicitacao", "base": "art. 14" }
+  ]
+}

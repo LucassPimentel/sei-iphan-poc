@@ -1,0 +1,1799 @@
+Quebra de linha
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-br" >
+<head >
+
+<link rel="shortcut icon" sizes="any" href="favicon/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta name="robots" content="noindex"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>:: Sistema Eletrônico de Informações - Pesquisa Pública ::</title>
+<link href="/infra_css/infra-tooltip.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/infra-barra-progresso.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/infra-impressao-global.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="print"/>
+<link href="/infra_css/infra-ajax.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/calendario/v2/infra-calendario.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/arvore/infra-arvore.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/mapa/infra-mapa.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/jquery/jquery-ui-1.13.2/jquery-ui.min.css?1.13.2" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/jquery/jquery-ui-1.13.2/jquery-ui.structure.min.css?1.13.2" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/jquery/jquery-ui-1.13.2/jquery-ui.theme.min.css?1.13.2" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/multiple-select/multiple-select.min.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/modal/jquery.modalLink-1.0.0.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/bootstrap/bootstrap-4.6.2.min.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/bootstrap/menu-bootstrap.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/infra-global-esquema-3.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/esquemas/azul_celeste/infra-esquema-3.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/infra-local-esquema-3.css?15660a69cc5b871856f6abb4e8f7ccc9" rel="stylesheet" type="text/css" media="all"/>
+<style></style><style type="text/css">
+#divInfraCaptcha {margin:.3em 0;}
+#lblInfraCaptcha {margin-right:.5em;}
+#lblInfraCaptcha img {vertical-align:bottom;}
+#txtInfraCaptcha {vertical-align:top;font-size:1.8em;text-align:center;max-width:130px;margin-right:3px;padding:3px;height:50px;}
+</style><style type="text/css" >
+<!--/*--><![CDATA[/*><!--*/
+.row{margin-top: 10px;}
+.mb-3{margin-bottom:0px !important; width: 50% !important}
+.data{width:auto !important; display: inline-block !important;}
+.infraImgModulo{vertical-align: middle;}
+#txtDataInicio{width:70%;}
+#txtDataFim{width:70%;}
+.captcha-loader {overflow: hidden}
+.capload { position: absolute; width: 140px; height: 45px; top: 10px; background: rgba(255,255,255,.9); z-index: 99; text-align: center; padding-top: 15px; display: none }
+
+/*]]>*/-->
+</style>
+<script type="text/javascript">var INFRA_PATH_CSS="/infra_css",INFRA_PATH_IMAGENS="/infra_css/imagens",INFRA_PATH_JS="/infra_js",INFRA_PATH_SVG="/infra_css/svg",INFRA_LUPA_TIPO_JANELA=2,INFRA_BARRA_TIPO_JANELA=1,INFRA_TIPO_ALERTA=1;</script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/jquery/jquery-3.7.0.min.js?3.7.0"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/jquery/jquery-ui-1.13.2/jquery-ui.min.js?1.13.2"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/multiple-select/multiple-select.min.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/ddslick/jquery.ddslick.min.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/modal/jquery.modalLink-1.0.0.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraPaginaEsquema3.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraBotaoMenu.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraUtil.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraCookie.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraUpload.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraTabelaDinamica.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraLupas.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraSelectEditavel.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraAjax.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraTooltip.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/calendario/v2/InfraCalendario.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/arvore/InfraArvore.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/maskedpwd/MaskedPassword.min.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/bootstrap/bootstrap-4.6.2.min.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/bootstrap/infra-menu-bootstrap.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/touch/jquery.ui.touch-punch.min.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/hotkeys/jquery.hotkeys.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+<script type="text/javascript" charset="iso-8859-1" >
+var infraCaptchaHttpRequest;
+function infraGerarNovoCaptcha(url) {
+if (window.XMLHttpRequest) {
+infraCaptchaHttpRequest = new XMLHttpRequest();
+} else if (window.ActiveXObject) {
+try {
+infraCaptchaHttpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+}
+catch (e) {
+try {
+infraCaptchaHttpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+}
+catch (e) {}
+}
+}
+if (!infraCaptchaHttpRequest) {
+alert('Não foi possível fazer a chamada AJAX para geração de um novo captcha. Tente novamente por favor.');
+return false;
+}
+infraCaptchaHttpRequest.onreadystatechange = infraAtualizarImagemCaptcha;
+infraCaptchaHttpRequest.open('GET', INFRA_PATH_JS + url);
+infraCaptchaHttpRequest.send();
+}
+function infraAtualizarImagemCaptcha() {
+if (infraCaptchaHttpRequest.readyState === 4) {
+if (infraCaptchaHttpRequest.status === 200) {
+document.getElementById('imgCaptcha').src = infraCaptchaHttpRequest.responseText;
+} else {
+alert('Houve um erro durante a requisição da um novo captcha. Tente novamente por favor.');
+}
+}
+}
+</script><script type="text/javascript" charset="iso-8859-1" src="solr/js/sistema.js?15660a69cc5b871856f6abb4e8f7ccc9"></script>
+
+<script type="text/javascript" charset="iso-8859-1" >
+<!--//--><![CDATA[//><!--
+
+
+var objAutoCompletarInteressadoRI1225 = null;
+var objAutoCompletarUsuario = null;
+var objAutoCompletarAssuntoRI1223 = null;
+var objAutoCompletarUnidade = null;
+
+function inicializar(){
+
+infraOcultarMenuSistemaEsquema();
+
+
+//Interessado/Remetente
+objAutoCompletarInteressadoRI1225 = new infraAjaxAutoCompletar('hdnIdParticipante','txtParticipante','md_pesq_controlador_ajax_externo.php?acao_ajax_externo=contato_auto_completar_contexto_pesquisa&id_orgao_acesso_externo=0&id_orgao_acesso_externo=0');
+//objAutoCompletarInteressadoRI1225.maiusculas = true;
+//objAutoCompletarInteressadoRI1225.mostrarAviso = true;
+//objAutoCompletarInteressadoRI1225.tempoAviso = 1000;
+//objAutoCompletarInteressadoRI1225.tamanhoMinimo = 3;
+objAutoCompletarInteressadoRI1225.limparCampo = true;
+//objAutoCompletarInteressadoRI1225.bolExecucaoAutomatica = false;
+
+
+objAutoCompletarInteressadoRI1225.prepararExecucao = function(){
+return 'palavras_pesquisa='+document.getElementById('txtParticipante').value;
+};
+objAutoCompletarInteressadoRI1225.selecionar('','');
+
+
+//Unidades
+objAutoCompletarUnidade = new infraAjaxAutoCompletar('hdnIdUnidade','txtUnidade','md_pesq_controlador_ajax_externo.php?acao_ajax_externo=unidade_auto_completar_todas&id_orgao_acesso_externo=0&id_orgao_acesso_externo=0');
+
+objAutoCompletarUnidade.limparCampo = true;
+objAutoCompletarUnidade.prepararExecucao = function(){
+var orgaosSelecionados = obterOrgaosSelecionados();
+if(orgaosSelecionados == null){
+return 'palavras_pesquisa='+document.getElementById('txtUnidade').value;
+}else{
+return 'palavras_pesquisa='+document.getElementById('txtUnidade').value+'&id_orgao='+obterOrgaosSelecionados();
+}
+};
+objAutoCompletarUnidade.selecionar('','');
+
+document.getElementById('txtProtocoloPesquisa').focus();
+
+//remover a string null dos combos
+document.getElementById('selTipoProcedimentoPesquisa').options[0].value='';
+document.getElementById('selSeriePesquisa').options[0].value='';
+
+infraProcessarResize();
+
+
+
+sistemaInicializar();
+
+}
+
+function tratarPeriodo(valor){
+if (valor=='0'){
+document.getElementById('divPeriodoExplicito').style.display='block';
+document.getElementById('txtDataInicio').value='';
+document.getElementById('txtDataFim').value='';
+}else if (valor =='30'){
+document.getElementById('divPeriodoExplicito').style.display='none';
+document.getElementById('txtDataInicio').value='16/08/2026';
+document.getElementById('txtDataFim').value='15/09/2026';
+}else if (valor =='60'){
+document.getElementById('divPeriodoExplicito').style.display='none';
+document.getElementById('txtDataInicio').value='17/07/2026';
+document.getElementById('txtDataFim').value='15/09/2026';
+}
+}
+
+function sugerirUsuario(obj){
+if (infraTrim(obj.value)==''){
+obj.value = '';
+}
+}
+
+function obterUsuarios(){
+var objHdnUsuarios = document.getElementById('hdnSiglasUsuarios');
+objHdnUsuarios.value = '';
+
+if (document.getElementById('txtSiglaUsuario1').value != ''){
+if (objHdnUsuarios.value == ''){
+objHdnUsuarios.value += infraTrim(document.getElementById('txtSiglaUsuario1').value);
+}else {
+objHdnUsuarios.value += ',' + infraTrim(document.getElementById('txtSiglaUsuario1').value);
+}
+}
+if (document.getElementById('txtSiglaUsuario2').value != ''){
+if (objHdnUsuarios.value == ''){
+objHdnUsuarios.value += infraTrim(document.getElementById('txtSiglaUsuario2').value);
+}else {
+objHdnUsuarios.value += ',' + infraTrim(document.getElementById('txtSiglaUsuario2').value);
+}
+}
+if (document.getElementById('txtSiglaUsuario3').value != ''){
+if (objHdnUsuarios.value == ''){
+objHdnUsuarios.value += infraTrim(document.getElementById('txtSiglaUsuario3').value);
+}else {
+objHdnUsuarios.value += ',' + infraTrim(document.getElementById('txtSiglaUsuario3').value);
+}
+}
+if (document.getElementById('txtSiglaUsuario4').value != ''){
+if (objHdnUsuarios.value == ''){
+objHdnUsuarios.value += infraTrim(document.getElementById('txtSiglaUsuario4').value);
+}else {
+objHdnUsuarios.value += ',' + infraTrim(document.getElementById('txtSiglaUsuario4').value);
+}
+}
+}
+
+$(document).ready(function(){
+
+updateCaptcha();
+
+var paginar = true;
+var formChanged = false;
+var buscaInicio = 0;
+var rowsSolr = 50;
+
+partialFields();
+
+var initdata = $('#seiSearch').serialize();
+
+$('#seiSearch').on('keyup change paste', 'input, select, textarea', function(){
+formChanged = pesquisar = true;
+});
+
+var timer;
+$('#divInfraAreaTelaD').on('scroll', function() {
+clearTimeout(timer);
+timer = setTimeout(function() {
+if(($('#divInfraAreaTelaD').prop('scrollHeight') - $('#divInfraAreaTelaD').scrollTop()) <= Math.ceil($('#divInfraAreaTelaD').height()) && paginar) {
+$('.ajax-loading').show();
+$.post('md_pesq_controlador_ajax_externo.php?acao_ajax_externo=protocolo_pesquisar&id_orgao_acesso_externo=0&isPaginacao=true&inicio='+buscaInicio+'&rowsSolr='+rowsSolr, $('#seiSearch').serialize()).done(function(data){
+if($(data).find('resultado').length > 0){
+$('.retorno-ajax > table > tbody:last-child').append($(data).find('resultado').html());
+buscaInicio += rowsSolr;
+}
+if($(data).find('consultavazia').length > 0){
+$('.total-registros-infinite').html('A pesquisa encontrou '+$('.retorno-ajax > table tbody tr.pesquisaTituloRegistro').length+' resultado(s).');
+}
+}).always(function() {
+$('.ajax-loading').hide();
+updateCaptcha();
+});
+}
+}, 500);
+});
+
+$('body').on('submit', '#seiSearch', function(e){
+e.preventDefault(); e.stopPropagation();
+
+if (!document.getElementById('chkSinProcessos').checked && !document.getElementById('chkSinDocumentosGerados').checked && !document.getElementById('chkSinDocumentosRecebidos').checked){
+alert('Selecione pelo menos uma das opções de pesquisa avançada: Processos, Documentos Gerados ou Documento Recebidos');
+return false;
+}
+
+if ($("#selOrgaoPesquisa").length > 0 && $("#selOrgaoPesquisa").multipleSelect("getSelects").length == 0) {
+alert('Nenhum Órgão Gerador selecionado.');
+return false;
+}
+
+$('input[name=partialfields]').val('');
+partialFields();
+buscaInicio = 0;
+
+$('.retorno-ajax > table > tbody tr, .sem-resultado').remove();
+$('.total-registros-infinite').empty();
+
+if (infraTrim(document.getElementById('txtInfraCaptcha').value) == '') {
+alert('Informe o código de confirmação.');
+document.getElementById('txtInfraCaptcha').focus();
+return false;
+}else{
+document.getElementById('hdnInfraCaptcha').value='1';
+}
+$('.ajax-loading').show();
+$.post('md_pesq_controlador_ajax_externo.php?acao_ajax_externo=protocolo_pesquisar&id_orgao_acesso_externo=0&isPaginacao=false&inicio='+buscaInicio+'&rowsSolr='+rowsSolr, $('#seiSearch').serialize()).done(function(data){
+if($(data).find('resultado').length > 0){
+$('.retorno-ajax > table > tbody:last-child').append($(data).find('resultado').html());
+buscaInicio += rowsSolr;
+}
+if($(data).find('consultavazia').length > 0){
+$('.retorno-ajax').append($(data).find('consultavazia').html());
+}
+}).always(function() {
+$('.ajax-loading').hide();
+updateCaptcha();
+});
+});
+
+$('body').on('reset', '#seiSearch', function(e){
+$('.retorno-ajax > table > tbody tr, .sem-resultado').remove();
+$('.total-registros-infinite').empty();
+$('input[name=txtProtocoloPesquisa]').focus();
+pesquisar = true;
+});
+
+function updateCaptcha(){
+$('#infraImgRecarregarCaptcha').trigger('click');
+$('#txtInfraCaptcha').val('');
+}
+
+});
+
+
+function exibirAvancado(){
+
+if (document.getElementById('divAvancado').style.display=='none'){
+document.getElementById('divAvancado').style.display = 'block';
+
+if (document.getElementById('optPeriodoExplicito').checked){
+document.getElementById('divPeriodoExplicito').style.display='block';
+}else{
+document.getElementById('divPeriodoExplicito').style.display='none';
+}
+document.getElementById('divUsuario').style.display = 'block';
+
+}else{
+document.getElementById('divAvancado').style.display = 'none';
+document.getElementById('divPeriodoExplicito').style.display='none';
+document.getElementById('divUsuario').style.display='none';
+document.getElementById('txtProtocoloPesquisa').focus();
+}
+
+infraProcessarResize();
+}
+
+$( document ).ready(function() {
+$("#selOrgaoPesquisa").multipleSelect({
+filter: false,
+minimumCountSelected: 1,
+selectAll: true
+});
+tratarSelecaoOrgao();
+});
+
+function restringirOrgao(){
+if (document.getElementById('chkSinRestringirOrgao').checked){
+$("#selOrgaoPesquisa").multipleSelect('uncheckAll');
+document.getElementById('chkSinRestringirOrgao').checked = true;
+$("#selOrgaoPesquisa").multipleSelect('check', );
+}
+}
+
+function obterOrgaosSelecionados() {
+if ($("#selOrgaoPesquisa").length === 0) {
+return null;
+}
+return $("#selOrgaoPesquisa").multipleSelect("getSelects");
+}
+
+function tratarSelecaoOrgao(){
+$('#txtUnidade, #hdnIdUnidade').val('');
+}
+
+
+//--><!]]>
+</script>
+</head>
+<body onload="inicializar();" >
+<button onclick="infraMoverParaTopo()" id="btnInfraTopo" class="infraButton infraCorBarraSistema" ><img src="/infra_css/svg/topo.svg?2.29.0" title="Voltar ao Topo" alt="Voltar ao Topo" tabindex="32767"></button>
+<div id="divInfraAreaGlobal" class="vh-100 vw-100 d-flex flex-column m-0 border-0" >
+
+<nav id="navInfraBarraNavegacao" class=" navbar navbar-expand-md infraBarraNavegacao infraCorBarraSistema p-0">
+<div id="divInfraBarraSistema" class="flex-column w-100 h-100 infraBarraSistema" >
+<div id="divInfraBarraSistemaLinha"></div>
+<h6 class="pl-3 mb-0 mx-0 d-none d-md-block infraCorBarraSuperior">INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL</h6>
+<h6 class="pl-3 mb-0 mx-0 d-md-none infraCorBarraSuperior">IPHAN</h6>
+
+<div id="divInfraBarraSistemaMovel" class="flex-row d-flex pb-0 pl-3 d-md-none media infraBarraSistemaMovel">
+<div class="d-flex flex-grow-1 infraBarraSistemaMovelE" >
+<div class="align-self-center mt-1">
+<span id="spnInfraIdentificacaoSistema"><img src="svg/sei_barra.svg?15660a69cc5b871856f6abb4e8f7ccc9" title="Sistema Eletrônico de Informações"/></span>
+</div>
+</div>
+<div class="infraBarraSistemaMovelD d-flex flex-shrink-0">
+</div>
+</div>
+<div id="divInfraBarraSistemaPadrao" class="navbar p-0 infraCorBarraSistema collapse navbar-collapse align-self-center infraBarraSistemaPadrao">
+<div id="divInfraBarraSistemaPadraoE" class="nav-link p-0 pl-3 d-none d-md-flex infraBarraSistemaPadraoE">
+<div class="align-self-center"><img src="svg/sei_barra.svg?15660a69cc5b871856f6abb4e8f7ccc9" title="Sistema Eletrônico de Informações"/></div>
+</div>
+<div id="divInfraBarraSistemaPadraoD" class="navbar-nav flex-grow-1 justify-content-end infraBarraSistemaPadraoD">
+</div>
+</div>
+</div>
+</nav>
+<div id="divInfraAreaTela" style="min-height:0;" class="w-100 flex-grow-1 d-flex flex-row divInfraAreaTela">
+<div id="divInfraAreaTelaD" class=" flex-grow-1 px-3" >
+<div id="divInfraBarraLocalizacao" class="infraBarraLocalizacao" tabindex="450">Pesquisa Pública</div>
+<form id="seiSearch" name="seiSearch" method="post" class="mb-5"
+action="md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0">
+
+<div class="row">
+<div class="col-sm-12 col-md-9 col-lg-9 col-xl-6">
+<div class="row" id="divGeral">
+<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+<label id="lblProtocoloPesquisa" for="txtProtocoloPesquisa" accesskey=""
+class="infraLabelOpcional">Nº SEI<br>(protocolo Processo/Documento):</label>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+<input type="text" id="txtProtocoloPesquisa" name="txtProtocoloPesquisa"
+class="infraText form-control"
+value=""
+tabindex="501"/>
+</div>
+</div>
+<div class="row" id="divAvancado">
+<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+<label id="lblPalavrasPesquisa" for="q" accesskey="" class="infraLabelOpcional">Texto para Pesquisa:</label>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+<div class="input-group mb-0">
+<input type="text" id="q" name="q" class="infraText form-control" style="width: 85%"
+value="" tabindex="502"/>
+<a id="ancAjuda" href="md_pesq_ajuda_exibir_externo.php?acao_externa=pesquisa_publica_ajuda&id_orgao_acesso_externo=0&id_orgao_acesso_externo=0" target="janAjuda" title="Ajuda para Pesquisa" tabindex="503">
+<img src="/infra_css/svg/ajuda.svg" class="infraImgModulo"/>
+</a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+<label id="lblPesquisarEm" accesskey="" class="infraLabelObrigatorio">Pesquisar em:</label>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+<input type="checkbox" id="chkSinProcessos" name="chkSinProcessos" value="P" class="infraCheckbox" checked="checked" tabindex="504"/>
+<label id="lblSinProcessos" for="chkSinProcessos" accesskey="" class="infraLabelCheckbox">Processos</label>
+<input type="checkbox" id="chkSinDocumentosGerados" name="chkSinDocumentosGerados" value="G" class="infraCheckbox" tabindex="505"/>
+<label id="lblSinDocumentosGerados" for="chkSinDocumentosGerados" accesskey="" class="infraLabelCheckbox">Documentos Gerados</label>
+<input type="checkbox" id="chkSinDocumentosRecebidos" name="chkSinDocumentosRecebidos" value="R" class="infraCheckbox" tabindex="506"/>
+<label id="lblSinDocumentosRecebidos" for="chkSinDocumentosRecebidos" accesskey="" class="infraLabelCheckbox">Documentos Externos</label>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+<label id="lblParticipante" for="txtParticipante" accesskey="" class="infraLabelOpcional">Interessado / Remetente:</label>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+<input type="text" id="txtParticipante" name="txtParticipante" class="infraText form-control" value="" tabindex="507"/>
+<input type="hidden" id="hdnIdParticipante" name="hdnIdParticipante" class="infraText" value=""/>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+<label id="lblUnidade" for="txtUnidade" class="infraLabelOpcional">Unidade Geradora:</label>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+<input type="text" id="txtUnidade" name="txtUnidade" class="infraText form-control" tabindex="508" value=""/>
+<input type="hidden" id="hdnIdUnidade" name="hdnIdUnidade" class="infraText" value=""/>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+<label id="lblTipoProcedimentoPesquisa" for="selTipoProcedimentoPesquisa" accesskey="" class="infraLabelOpcional">Tipo do Processo:</label>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+<select id="selTipoProcedimentoPesquisa" name="selTipoProcedimentoPesquisa" class="infraSelect form-control" tabindex="509">
+<option value="null">&nbsp;</option>
+<option value="100000764">Abastecimento de combustível (veículo oficial)</option>
+<option value="100000927">Ação Civil Pública - Ministério Público</option>
+<option value="100000894">Ação Judicial</option>
+<option value="100000952">AÇÕES DE FOMENTO AO PATRIMÔNIO CULTURAL</option>
+<option value="100000882">AÇÕES DE GESTÃO COMPARTILHADA DO PATRIMÔNIO CULTURAL</option>
+<option value="100000726">AÇÕES E PLANOS DE SALVAGUARDA - Bens Imateriais</option>
+<option value="100000875">AÇÕES EDUCATIVAS E PROMOÇÃO DO PATRIMÔNIO CULTURAL (educação patrimonial e promoção)</option>
+<option value="100000843">Alienação / Baixa de Acervo Bibliográfico</option>
+<option value="100000744">ANÁLISE DE INTERVENÇÃO EM BEM TOMBADO E/OU ÁREA DE ENTORNO</option>
+<option value="100000747">ANÁLISE DE PROJETOS CULTURAIS - PRONAC</option>
+<option value="100000842">Aquisição de Acervo Bibliográfico (compra, doação, permuta, etc)</option>
+<option value="100000347">ASSESSORIA PARLAMENTAR / ACOMPANHAMENTO LEGISLATIVO</option>
+<option value="100000375">Auditoria e Controle</option>
+<option value="100000814">AUTORIZAÇÃO DE INTERVENÇÃO EM BEM FERROVIÁRIO</option>
+<option value="100000817">AUTORIZAÇÃO DE INTERVENÇÃO EM BEM IMÓVEL (isolado, conjunto ou área de entorno)</option>
+<option value="100000820">AUTORIZAÇÃO DE INTERVENÇÃO EM BEM MÓVEL OU INTEGRADO - coleção, artefato ou acervo</option>
+<option value="100000807">AUTORIZAÇÃO DE INTERVENÇÃO EM BEM PAISAGÍSTICO - jardim histórico e paisagem</option>
+<option value="100000889">AUTORIZAÇÃO DE INTERVENÇÃO EM BEM PALEONTOLÓGICO (coleção, artefato, acervo ou sítio)</option>
+<option value="100000888">BENS CULTURAIS PROCURADOS (informações sobre roubo, furto ou desaparecimento de bens culturais)</option>
+<option value="100000880">Cadastramento de Usuários em Sistemas Informatizados / Eletrônicos</option>
+<option value="100000974">CADASTRO DE INSTITUIÇÃO DE GUARDA E PESQUISA</option>
+<option value="100000741">CADASTRO DE NEGOCIANTES DE ANTIGUIDADES E OBRAS DE ARTE</option>
+<option value="100000703">CADASTRO DE SÍTIO ARQUEOLÓGICO</option>
+<option value="100000345">Campanha Institucional - Público Interno</option>
+<option value="100000803">CASA DO PATRIMÔNIO</option>
+<option value="100000893">Cessão de Imóvel</option>
+<option value="100000748">CESSÃO DE USO DE BEM FERROVIÁRIO</option>
+<option value="100000711">CHANCELA DE PAISAGEM CULTURAL</option>
+<option value="100000970">Comissão de Ética - Gestão da Ética</option>
+<option value="100000413">Comissão de Ética (apurações)</option>
+<option value="100000928">Comissão de Ética (consulta)</option>
+<option value="100000936">Comissão de Ética (denúncia)</option>
+<option value="100000343">Comunicação: Publicidade Legal (comunicação de grande circulação)</option>
+<option value="100000727">CONSERVAÇÃO DE ACERVOS E COLEÇÕES DOCUMENTAIS E MUSEOLÓGICOS</option>
+<option value="100000808">CONSERVAÇÃO DE BEM FERROVIÁRIO</option>
+<option value="100000806">CONSERVAÇÃO DE BEM MATERIAL IMÓVEL</option>
+<option value="100000719">CONSERVAÇÃO DE BEM MATERIAL MÓVEL</option>
+<option value="100000895">CONSERVAÇÃO DE BEM NATURAL</option>
+<option value="100000721">CONSERVAÇÃO DE SÍTIO ARQUEOLÓGICO</option>
+<option value="100000959">CONSULTA SOBRE INCIDÊNCIA DE ACAUTELAMENTO</option>
+<option value="100000265">Contabilidade: Análise Contábil</option>
+<option value="100000266">Contabilidade: Conformidade de Gestão</option>
+<option value="100000269">Contabilidade: Declarações e demais obrigações acessórias (DIRF, DERC, GFIP etc.)</option>
+<option value="100000270">Contabilidade: Encerramento do Exercício</option>
+<option value="100000925">Contabilidade: Escrituração Fiscal Digital (EFD-Reinf, E-Social, etc)</option>
+<option value="100000271">Contabilidade: Fechamento Contábil - Estoque</option>
+<option value="100000272">Contabilidade: Fechamento Contábil Patrimonial</option>
+<option value="100000924">Contabilidade: Gestão Patrimonial</option>
+<option value="100000273">Contabilidade: Manuais</option>
+<option value="100000274">Contabilidade: Normatização Interna e Orientações Gerais</option>
+<option value="100000926">Contabilidade: PCASP - Plano de Contas Aplicado ao Setor Público</option>
+<option value="100000275">Contabilidade: Prestação de Contas</option>
+<option value="100000929">Contabilidade: Regularização Contábil</option>
+<option value="100000923">Contabilidade: Sistemas Estruturantes (SIAFI, SIADS, SISG, CIPI etc.)</option>
+<option value="100000775">Contratação de Serviços Terceirizados (apoio administrativo, recepção, segurança, limpeza etc)</option>
+<option value="100000896">Contratação de Serviços Terceirizados (documentos pessoais)</option>
+<option value="100000298">Controle de Acesso / Portaria / Recepção</option>
+<option value="100000735">CONTROLE DE CIRCULAÇÃO/AUTORIZAÇÃO PARA EXPORTAÇÃO TEMPORÁRIA DE BENS ACAUTELADOS/BENS TOMBADOS</option>
+<option value="100000840">Controle de Garagem / Estacionamento de Veículos</option>
+<option value="100000878">Controle de uso de espaço (reserva e agendamento para uso de espaços e salas)</option>
+<option value="100000945">Denúncia (Corregedoria)</option>
+<option value="100000868">Descentralização de Recursos</option>
+<option value="100000772">Deslocamento / Transporte com Veículo Oficial</option>
+<option value="100000745">DIFUSÃO DO PATRIMÔNIO CULTURAL</option>
+<option value="100000911">Editoração, programação visual, serviços gráficos</option>
+<option value="100000730">ELABORAÇÃO DE PLANO DE CHANCELA</option>
+<option value="100000916">Elaboração e Revisão de Normativos - Decreto nº 10.139/2019</option>
+<option value="100000812">EXPORTAÇÃO DE BENS CULTURAIS - Comércio</option>
+<option value="100000276">Finanças: Execução Financeira</option>
+<option value="100000277">Finanças: Normatização Interna</option>
+<option value="100000241">Finanças: Reembolso/Ressarcimento</option>
+<option value="100000749">FINANCIAMENTO DE OBRAS DE INTERVENÇÃO EM IMÓVEIS PRIVADOS</option>
+<option value="100000913">FISCALIZAÇÃO</option>
+<option value="100000733">FISCALIZAÇÃO DE BEM FERROVIÁRIO</option>
+<option value="100000954">Fiscalização de Contratos - SM</option>
+<option value="100000740">FISCALIZAÇÃO DE NEGOCIANTES DE OBRAS DE ARTE E ANTIGUIDADES - incluindo leiloeiros</option>
+<option value="100000731">FISCALIZAÇÃO EM BEM ARQUEOLÓGICO</option>
+<option value="100000732">FISCALIZAÇÃO EM BEM IMÓVEL - isolado, conjunto ou área de entorno</option>
+<option value="100000886">FISCALIZAÇÃO EM BEM MÓVEL OU INTEGRADO - coleção, artefato ou acervo</option>
+<option value="100000887">FISCALIZAÇÃO EM BEM PALEONTOLÓGICO - coleção, artefato, acervo ou sítio</option>
+<option value="100000746">FORMAÇÃO E PESQUISA</option>
+<option value="100000915">Formulário de Demanda Editorial</option>
+<option value="100000958">Funcionamento predial - Patrimônio (normas, regulamentações e decisões de caráter geral)</option>
+<option value="100000955">Fundo Nacional da Cultura (FNC)</option>
+<option value="100000368">Gestão da Informação: Comissão Permanente de Avaliação de Documentos (CPAD)</option>
+<option value="100000365">Gestão da Informação: Credenciamento de Segurança</option>
+<option value="100000919">Gestão da Informação: Eliminação e descarte de documentos de arquivo</option>
+<option value="100000937">Gestão da Informação: Gestão do Sistema Eletrônico de Informações SEI!</option>
+<option value="100000419">Gestão da Informação: Gestão Documental</option>
+<option value="100000366">Gestão da Informação: Normatização Interna</option>
+<option value="100000369">Gestão da Informação: Reconstituição Documental</option>
+<option value="100000367">Gestão da Informação: Rol Anual de Informações Classificadas</option>
+<option value="100000411">Gestão da Informação: Segurança da Informação e Comunicações</option>
+<option value="100000922">Gestão da Informação: Transferência ou Recolhimento de Documentos Arquivísticos aos Arquivos</option>
+<option value="100000953">Gestão da Integridade</option>
+<option value="100000373">Gestão de Processos: Mapeamento e Modelagem</option>
+<option value="100000372">Gestão de Projetos: Planejamento e Execução</option>
+<option value="100000384">Gestão de Tecnologia da Informação</option>
+<option value="100000934">Gestão de Tecnologia da Informação - Atualização de Informações</option>
+<option value="100000964">Gestão de Tecnologia da Informação - Pagamentos</option>
+<option value="100000962">Gestão de Tecnologia da Informação - Reajuste Contratual</option>
+<option value="100000965">Gestão de Tecnologia da Informação - Registro de Ocorrências</option>
+<option value="100000961">Gestão de Tecnologia da Informação - Renovação Contratual</option>
+<option value="100000872">Gestão de Tecnologia da Informação: Aquisição</option>
+<option value="100000938">Gestão e monitoramento dos Bens Reconhecidos Internacionalmente</option>
+<option value="100000704">IDENTIFICAÇÃO DE ACERVOS E COLEÇÕES DOCUMENTAIS E MUSEOLÓGICOS</option>
+<option value="100000709">IDENTIFICAÇÃO DE BEM FERROVIÁRIO</option>
+<option value="100000705">IDENTIFICAÇÃO DE BEM IMATERIAL</option>
+<option value="100000706">IDENTIFICAÇÃO DE BEM MATERIAL IMÓVEL</option>
+<option value="100000707">IDENTIFICAÇÃO DE BEM MATERIAL MÓVEL</option>
+<option value="100000708">IDENTIFICAÇÃO DE BEM NATURAL</option>
+<option value="100000917">IDENTIFICAÇÃO DE TERRITÓRIOS QUILOMBOLAS (RTID/INCRA)</option>
+<option value="100000912">Imóvel: aquisição por compra</option>
+<option value="100000921">Imóvel: desfazimento ou devolução</option>
+<option value="100000963">Informações Gerais</option>
+<option value="100000883">Inquérito Civil Público - Ministério Público</option>
+<option value="100000844">Inventário e Tratamento Técnico de Acervo Bibliográfico (catalogação, indexação, registro, etc)</option>
+<option value="100000943">Investigação Preliminar Sumária - IPS</option>
+<option value="100000969">LICENCIAMENTO AMBIENTAL</option>
+<option value="100000891">LICENCIAMENTO AMBIENTAL - IN n° 006/2025</option>
+<option value="100000890">LICENCIAMENTO AMBIENTAL - Portaria IPHAN n° 230/02</option>
+<option value="100000898">Licenciamento de Veículo</option>
+<option value="100000793">Locação de Imóvel</option>
+<option value="100000763">Manutenção de Ar Condicionado</option>
+<option value="100000779">Manutenção de Elevador</option>
+<option value="100000876">Manutenção de equipamentos elétricos / eletrônicos</option>
+<option value="100000762">Manutenção de Veículos (incluindo mão de obra, peças e serviços de guincho em território nacional)</option>
+<option value="100000754">Manutenção e Fornecimento de Energia Elétrica</option>
+<option value="100000837">Manutenção e Fornecimento Hidráulico (água e esgoto)</option>
+<option value="100000838">Manutenção Predial (atividade-meio, inclusive reforma)</option>
+<option value="100000292">Material: alienação / baixa de material por cessão, doação, permuta</option>
+<option value="100000291">Material: alienação / baixa de material por venda</option>
+<option value="100000831">Material: aquisição / cessão por empréstimo ou comodato de Material Permanente</option>
+<option value="100000833">Material: aquisição por cessão, doação, permuta de Material de Consumo</option>
+<option value="100000892">Material: aquisição por compra de material (de consumo e permanente em processo único)</option>
+<option value="100000753">Material: aquisição por compra de Material de Consumo</option>
+<option value="100000829">Material: aquisição por compra de Material Permanente</option>
+<option value="100000832">Material: aquisição por doação e/ou permuta de Material Permanente</option>
+<option value="100000294">Material: Inventário de Material de Consumo</option>
+<option value="100000295">Material: Inventário de Material Permanente</option>
+<option value="100000910">Material: Manutenção e Instalação de Material Permanente</option>
+<option value="100000293">Material: Movimentação de Material de Consumo</option>
+<option value="100000391">Material: Movimentação de Material Permanente</option>
+<option value="100000788">Missão Fora da Sede: concessão de diárias e passagens / viagem ao exterior</option>
+<option value="100000790">Missão Fora da Sede: concessão de diárias e passagens / viagem no Brasil</option>
+<option value="100000835">Missão Fora da Sede: Viagem ao exterior (sem ônus para a instituição)</option>
+<option value="100000834">Missão Fora da Sede: Viagem no Brasil (sem ônus para a instituição)</option>
+<option value="100000728">MONITORAMENTO DE AÇÕES DE SUSTENTABILIDADE (Patrimônio Imaterial)</option>
+<option value="100000948">Monitoramento de trabalhos correcionais</option>
+<option value="100000826">NORMATIZAÇÃO (Patrimônio Imaterial)</option>
+<option value="100000825">NORMATIZAÇÃO (Patrimônio Material)</option>
+<option value="100000884">NOTIFICAÇÃO DE BENS CULTURAIS PROCURADOS</option>
+<option value="100000885">OPERAÇÕES DO SISTEMA NACIONAL DE PATRIMÔNIO CULTURAL - SNPC</option>
+<option value="100000900">Operações tributárias (impostos e taxas)</option>
+<option value="100000966">Orçamento e Finanças: Orientações Gerais</option>
+<option value="100000279">Orçamento: Acompanhamento de Despesa Mensal</option>
+<option value="100000280">Orçamento: Contingenciamento</option>
+<option value="100000281">Orçamento: Créditos Adicionais</option>
+<option value="100000282">Orçamento: Descentralização de Créditos</option>
+<option value="100000284">Orçamento: Programação Orçamentária</option>
+<option value="100000841">Ouvidoria - Fale Conosco (críticas, sugestões, reclamações, etc)</option>
+<option value="100000743">PESQUISA ARQUEOLÓGICA: AUTORIZAÇÃO, PERMISSÃO, ANÁLISE E FISCALIZAÇÃO DE PROJETOS</option>
+<option value="100000101">Pessoal: Abono Permanência - Provisório</option>
+<option value="100000405">Pessoal: Abono Permanência em Serviço</option>
+<option value="100000908">Pessoal: Ação Judicial - Prestação de Informações / Cumprimento</option>
+<option value="100000103">Pessoal: Adicional de Insalubridade</option>
+<option value="100000104">Pessoal: Adicional de Periculosidade</option>
+<option value="100000105">Pessoal: Adicional Noturno</option>
+<option value="100000106">Pessoal: Adicional por Atividade Penosa</option>
+<option value="100000107">Pessoal: Adicional por Serviço Extraordinário</option>
+<option value="100000108">Pessoal: Adicional por Tempo de Serviço</option>
+<option value="100000854">Pessoal: Admissão, Contratação, Nomeação, Readmissão, Readaptação. Recondução, Reintegração</option>
+<option value="100000109">Pessoal: Afastamento</option>
+<option value="100000119">Pessoal: Ajuda de Custo com Mudança de Domicílio</option>
+<option value="100000151">Pessoal: Aposentadoria - Concessão</option>
+<option value="100000120">Pessoal: Aposentadoria - Contagem Tempo de Serviço</option>
+<option value="100000406">Pessoal: Aposentadoria - Revisão</option>
+<option value="100000123">Pessoal: Assentamento Funcional do Servidor</option>
+<option value="100000395">Pessoal: Assistência à Saúde</option>
+<option value="100000862">Pessoal: Atestado de Comparecimento / Prontuário Médico</option>
+<option value="100000836">Pessoal: Auxílio (Direitos, Obrigações e Vantagens em folha)</option>
+<option value="100000131">Pessoal: Auxílio (Previdência, Assistência e Seguridade Social)</option>
+<option value="100000142">Pessoal: Avaliação de Estágio Probatório</option>
+<option value="100000968">Pessoal: Avaliação de Gratificação de Desempenho</option>
+<option value="100000967">Pessoal: Avaliação de Progressão funcional</option>
+<option value="100000143">Pessoal: Averbação de Tempo de Serviço</option>
+<option value="100000146">Pessoal: Cadastro de Dependente no Imposto de Renda</option>
+<option value="100000905">Pessoal: Cadastro de Dependente para Acompanhamento</option>
+<option value="100000845">Pessoal: Capacitação promovida pelo IPHAN (cursos, treinamentos, etc)</option>
+<option value="100000846">Pessoal: Capacitação promovida por outros órgãos no Brasil (cursos, treinamentos, etc)</option>
+<option value="100000847">Pessoal: Capacitação promovida por outros órgãos no Exterior (cursos, treinamentos, etc)</option>
+<option value="100000148">Pessoal: Cessão de Servidor para outro Órgão</option>
+<option value="100000848">Pessoal: Concessão / Ausência do Servidor</option>
+<option value="100000849">Pessoal: Concessão de Horário Especial</option>
+<option value="100000152">Pessoal: Concurso Público</option>
+<option value="100000850">Pessoal: Controle de Frequência (folha de ponto, abono, hora extra, etc)</option>
+<option value="100000851">Pessoal: Delegação de Competência / Procuração</option>
+<option value="100000855">Pessoal: Demissão, Dispensa, Exoneração, Rescisão Contratual, Falecimento</option>
+<option value="100000163">Pessoal: Desconto da Contribuição para o INSS</option>
+<option value="100000164">Pessoal: Desconto de Contribuição Associativa</option>
+<option value="100000165">Pessoal: Desconto de Contribuição Sindical</option>
+<option value="100000166">Pessoal: Desconto de Empréstimo Consignado</option>
+<option value="100000167">Pessoal: Desconto de Pensão Alimentícia</option>
+<option value="100000169">Pessoal: Desconto do IRPF Retido na Fonte</option>
+<option value="100000857">Pessoal: Designação, Disponibilidade, Redistribuição, Substituição</option>
+<option value="100000906">Pessoal: Despesa de Exercícios Anteriores</option>
+<option value="100000172">Pessoal: Emissão de Certidões e Declarações</option>
+<option value="100000174">Pessoal: Encargo Patronal - Contribuição para INSS</option>
+<option value="100000852">Pessoal: Estágio</option>
+<option value="100000179">Pessoal: Exoneração de Cargo Efetivo</option>
+<option value="100000181">Pessoal: Falecimento de Servidor</option>
+<option value="100000102">Pessoal: Férias</option>
+<option value="100000853">Pessoal: Folha de Pagamento / Ficha Financeira</option>
+<option value="100000188">Pessoal: Gratificação Natalina (Décimo Terceiro)</option>
+<option value="100000190">Pessoal: Horário de Expediente - Definição</option>
+<option value="100000191">Pessoal: Horário de Expediente - Escala de Plantão</option>
+<option value="100000196">Pessoal: Indenização de Transporte (meio próprio)</option>
+<option value="100000920">Pessoal: Indícios e Controle Externo.</option>
+<option value="100000198">Pessoal: Licença</option>
+<option value="100000856">Pessoal: Lotação, Remoção, Transferência, Permuta</option>
+<option value="100000214">Pessoal: Movimento Reivindicatório</option>
+<option value="100000215">Pessoal: Negociação Sindical e Acordo Coletivo</option>
+<option value="100000218">Pessoal: Ocupação de Imóvel Funcional</option>
+<option value="100000219">Pessoal: Orientações e Diretrizes Gerais</option>
+<option value="100000957">Pessoal: Outros assuntos referentes à pessoal</option>
+<option value="100000859">Pessoal: Pagamento de Provento / Remuneração</option>
+<option value="100000860">Pessoal: Penalidades</option>
+<option value="100000909">Pessoal: Pensão - Revisão</option>
+<option value="100000228">Pessoal: Pensão por Morte de Servidor</option>
+<option value="100000861">Pessoal: Planejamento da Força de Trabalho/ Estudo e Previsão de Pessoal</option>
+<option value="100000230">Pessoal: Prêmios de Reconhecimento</option>
+<option value="100000149">Pessoal: Prevenção de Acidente de Trabalho</option>
+<option value="100000918">Pessoal: processo seletivo</option>
+<option value="100000907">Pessoal: Recadastramento - Aposentado/Pensionista</option>
+<option value="100000956">Pessoal: Reembolso de Cessão</option>
+<option value="100000242">Pessoal: Relação com Conselho Profissional</option>
+<option value="100000400">Pessoal: Ressarcimento ao Erário</option>
+<option value="100000252">Pessoal: Restruturação de Cargos e Funções</option>
+<option value="100000254">Pessoal: Salário-Família</option>
+<option value="100000197">Pessoal: Saúde - Inspeção Periódica</option>
+<option value="100000951">PGD/Iphan - Programa de Gestão e Desempenho no Iphan</option>
+<option value="100000870">Planejamento Estratégico</option>
+<option value="100000869">Plano de Aquisições</option>
+<option value="100000816">PRESERVAÇÃO / INTERVENÇÃO EM BEM IMÓVEL - Consulta Prévia</option>
+<option value="100000300">Prevenção contra Incêndio</option>
+<option value="100000944">Processo Administrativo de Responsabilização de Pessoa Jurídica - PAR</option>
+<option value="100000950">Processo Administrativo Disciplinar - Rito Ordinário</option>
+<option value="100000949">Processo Administrativo Disciplinar - Rito Sumário</option>
+<option value="100000935">Processo Recebido Externamente (a classificar)</option>
+<option value="100000940">Promoção e Difusão dos Bens Reconhecidos Internacionalmente</option>
+<option value="100000930">PTD: IDENTIFICAÇÃO DE BEM IMATERIAL</option>
+<option value="100000931">PTD: RECONHECIMENTO E PROMOÇÃO DE AÇÕES PARA O PATRIMÔNIO CULTURAL (inclusive prêmios)</option>
+<option value="100000903">Recadastramento de Ação Judicial - Módulo de Ações Judiciais do SIGEPE</option>
+<option value="100000713">RECONHECIMENTO DE LÍNGUAS COMO REFERÊNCIA CULTURAL</option>
+<option value="100000827">RECONHECIMENTO E PROMOÇÃO DE AÇÕES PARA O PATRIMÔNIO CULTURAL (inclusive prêmios)</option>
+<option value="100000939">Reconhecimento Internacional de Bens Protegidos</option>
+<option value="100000715">REGISTRO (Bem Imaterial)</option>
+<option value="100000710">REGISTRO DE SÍTIO ARQUEOLÓGICO</option>
+<option value="100000972">Relações Interinstitucionais</option>
+<option value="100000423">Relações Internacionais: Cooperação Internacional</option>
+<option value="100000901">Relatório de Atividades (apenas para atividades que não se encaixem em processos mapeados)</option>
+<option value="100000941">Representação</option>
+<option value="100000942">Representação Funcional</option>
+<option value="100000716">REVALIDAÇÃO DE CHANCELA DE PAISAGEM CULTURAL</option>
+<option value="100000712">REVALIDAÇÃO DE REGISTRO (Patrimônio Imaterial)</option>
+<option value="100000822">SAÍDA PARA O EXTERIOR DE ACERVO ARQUEOLÓGICO - Comércio</option>
+<option value="100000736">SAÍDA PARA O EXTERIOR DE ACERVO ARQUEOLÓGICO - Saída do País</option>
+<option value="100000873">Sanções Administrativas - Averiguação de Eventual Aplicação de Penalidade (fornecedor)</option>
+<option value="100000864">Seguro de Bens</option>
+<option value="100000960">SEI Federação</option>
+<option value="100000902">Serviço de Agenciamento de Viagem (contratação, gestão etc)</option>
+<option value="100000863">Serviço de Guarda / Segurança / Vigilância</option>
+<option value="100000871">Serviço de Protocolo (inclusive malote e correios)</option>
+<option value="100000867">Serviço de Reprografia</option>
+<option value="100000865">Serviço de Telefonia (fixa ou móvel - uso, instalação, transferência, manutenção, reparo)</option>
+<option value="100000770">Serviços continuados de limpeza, conservação e higienização predial</option>
+<option value="100000881">Serviços de Eventos</option>
+<option value="100000879">Serviços de Transmissão de Dados, Voz e Imagem (inclusive videoconferência)</option>
+<option value="100000897">Sinalização Predial</option>
+<option value="100000360">Sindicância, Inquérito ou Processo Disciplinar - PAD</option>
+<option value="100000932">Sistema de informação: biblioteca digital</option>
+<option value="100000381">Sistema Eletrônico do Serviço de Informações ao Cidadão - e-SIC</option>
+<option value="100000874">Solicitação / Prestação de Informações Diversas (apenas para demandas fora do SIC)</option>
+<option value="100000899">Solicitação de Criação, Modificação ou Desativação de Unidade no SEI</option>
+<option value="100000946">Solicitação de Informações Internas (Corregedoria)</option>
+<option value="100000268">Suprimento de Fundos: Concessão e Prestação de Contas</option>
+<option value="100000390">Suprimento de Fundos: Solicitação de Despesa</option>
+<option value="100000971">Termo, Acordo, Cooperação, Adesão</option>
+<option value="100000904">TESTE</option>
+<option value="100000717">TOMBAMENTO (Bem Material)</option>
+<option value="100000947">TOMBAMENTO DE QUILOMBOS</option>
+<option value="100000823">TRANSFERÊNCIA DE GUARDA DE ACERVO ARQUEOLÓGICO - Comércio</option>
+<option value="100000737">TRANSFERÊNCIA DE GUARDA DE ACERVO ARQUEOLÓGICO - Saída do País</option>
+<option value="100000824">TRANSFERÊNCIA TEMPORÁRIA DE ACERVO ARQUEOLÓGICO - Comércio</option>
+<option value="100000738">TRANSFERÊNCIA TEMPORÁRIA DE ACERVO ARQUEOLÓGICO - Saída do País</option>
+<option value="100000973">Tutorial e Manual - Prestação de Contas Parcial e Final</option>
+<option value="100000714">VALORAÇÃO DE BEM FERROVIÁRIO</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+<label id="lblSeriePesquisa" for="selSeriePesquisa" accesskey="" class="infraLabelOpcional">Tipo do Documento:</label>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+<select id="selSeriePesquisa" name="selSeriePesquisa" class="infraSelect form-control" tabindex="510">
+<option value="null">&nbsp;</option>
+<option value="46">Abaixo-Assinado</option>
+<option value="260">Abertura de Procedimento Licitatório</option>
+<option value="8">Acórdão</option>
+<option value="106">Acordo</option>
+<option value="1101">Acordo de Conduta Pessoal e Profissional</option>
+<option value="1296">Acordo de Cooperação</option>
+<option value="231">Acordo de Cooperação Técnica</option>
+<option value="1433">Acordo Programa Gestão Respons Compartilhada PGRC</option>
+<option value="1214">Afastamento PósGrad Anexo II: Formulário Inscrição</option>
+<option value="1215">Afastamento PósGrad Anexo III: Plano Afastamento</option>
+<option value="1216">Afastamento PósGrad Anexo IV: Termo Anuência</option>
+<option value="1217">Afastamento PósGrad Anexo V: Decl Neg Licença</option>
+<option value="1218">Afastamento PósGrad Anexo VI: Decl Neg Afastamento</option>
+<option value="1388">Afastamento Pós-Graduação Anexo VII</option>
+<option value="95">Agenda</option>
+<option value="262">Alegações</option>
+<option value="48">Alvará</option>
+<option value="116">Anais</option>
+<option value="7">Análise</option>
+<option value="220">Análise de Riscos</option>
+<option value="263">Anexo</option>
+<option value="1223">Anexo I - Formulário de solicitação de afastamento</option>
+<option value="1207">Anexo I - IN 90 Autodeclaração de saúde</option>
+<option value="1316">Anexo I - Instrução Normativa 70/2022</option>
+<option value="1329">Anexo II - Declaração de Execução de Atividades</option>
+<option value="1315">Anexo II - Instrução Normativa 70/2022</option>
+<option value="1208">Anexo II IN90 Autodeclaração filho menor idade esc</option>
+<option value="1224">Anexo II Termo compromisso e responsabilidade afas</option>
+<option value="1225">Anexo III - Relatório de afastamento</option>
+<option value="1328">Anexo III - Termo de Compromisso</option>
+<option value="1209">Anexo III IN90 Autodeclaração retorno trabalho pre</option>
+<option value="1226">Anexo IV - Termo de apresentação</option>
+<option value="1363">Anexo IV - Termo de Compromisso - Servidor PGD</option>
+<option value="1227">Anexo V - Solicitação de prorrogação afastamento</option>
+<option value="96">Anotação</option>
+<option value="1580">Anotação de Atendimento</option>
+<option value="1113">Anotação de Responsabilidade Técnica (ART)</option>
+<option value="117">Anteprojeto</option>
+<option value="1311">Anuência de Licença - CNL</option>
+<option value="115">Apartado Sigiloso</option>
+<option value="1313">Aplicação de Penalidade</option>
+<option value="118">Apólice</option>
+<option value="119">Apostila</option>
+<option value="1172">Apresentação</option>
+<option value="1244">Arquivo ADA</option>
+<option value="1245">Arquivo AID</option>
+<option value="1514">Arquivo georreferenciado de ADA e/ou AID</option>
+<option value="1595">Arquivos de Mídia e/ou GeoEspaciais</option>
+<option value="67">Ata</option>
+<option value="256">Ata de Registro de Preços</option>
+<option value="229">Ata de Reunião</option>
+<option value="1198">Ata de Reunião do Conselho Consultivo</option>
+<option value="1122">AtaTeste</option>
+<option value="74">Atestado</option>
+<option value="1157">Atestado Conformidade Parecer Referencial Anexo II</option>
+<option value="189">Atestado de Capacidade Técnica</option>
+<option value="1232">Atestado de Conformidade (PR01 e 02/2022)</option>
+<option value="1376">Ateste Atendimento Solicitação Interna de Serviço</option>
+<option value="1068">Ateste de Nota de Empenho</option>
+<option value="1344">Ateste de Nota Fiscal de Materiais</option>
+<option value="1343">Ateste de Nota Fiscal de Serviços</option>
+<option value="1230">Ato Reconhec Inexigibilidade (PR01 e 02/2022)</option>
+<option value="52">Áudio</option>
+<option value="120">Auto</option>
+<option value="1115">Auto de Infração - Portaria 187/2010</option>
+<option value="269">Autorização</option>
+<option value="1267">Autorização contratação inexigibilidade</option>
+<option value="852">Autorização de Acesso à Declaracao de Ajuste DIRF</option>
+<option value="1380">Autorização de Deslocamento de Posto de Serviço</option>
+<option value="1149">Autorização de Dispensa de Licitação</option>
+<option value="1205">Autorização de Dispensa Licitação - Lei 14.133/21</option>
+<option value="1274">Autorização de Inexigibilidade - Lei 14.133</option>
+<option value="960">Autorização de Pagamento - AP</option>
+<option value="1097">Auxílio Pesquisa Relatório de Prestação de Contas</option>
+<option value="981">Avaliação Contrato Temporário Anexo 1 e 2</option>
+<option value="192">Aviso de Audiência Pública</option>
+<option value="1362">Aviso de Contratação Direta</option>
+<option value="1188">Aviso de Dispensa Eletrônica</option>
+<option value="31">Aviso de Recebimento - AR</option>
+<option value="1121">Aviso de Tombamento</option>
+<option value="32">Balancete</option>
+<option value="33">Balanço</option>
+<option value="122">Bilhete</option>
+<option value="34">Boletim</option>
+<option value="240">Boletim de Concessão de Diárias</option>
+<option value="97">Boleto</option>
+<option value="1587">Cadastro do Objeto Monitorado e Plano de Monitoramento DIVMEP</option>
+<option value="1236">Cadastro Módulo TED, Parlamentar e Especiais</option>
+<option value="1057">Cadastro TransfereGov: Discricionárias e Legais</option>
+<option value="1070">Cadastro Usuários da Rede IPHAN</option>
+<option value="984">Cálculo da Avaliação Contrato Temporário Anexo 4</option>
+<option value="211">Calendário</option>
+<option value="270">Canhoto</option>
+<option value="843">Carta</option>
+<option value="1308">Carta de Preposto</option>
+<option value="80">Carta Externa</option>
+<option value="209">Cartão</option>
+<option value="123">Cartaz</option>
+<option value="87">Carteira</option>
+<option value="1237">Cartilha</option>
+<option value="1241">Catálogo</option>
+<option value="124">Cédula</option>
+<option value="81">Certidão</option>
+<option value="1129">Certidão de Intimação Cumprida</option>
+<option value="1448">Certidão de Registro de Bem Cultural Imaterial</option>
+<option value="1003">Certidão de Tempo de Contribuição</option>
+<option value="973">Certidão de Tombamento</option>
+<option value="1504">Certidões</option>
+<option value="82">Certificado</option>
+<option value="1387">Certificado IPHAN</option>
+<option value="830">Cessão de Direito de Uso de Imagem</option>
+<option value="832">Chamada Pública - Casa do Patrimônio</option>
+<option value="1185">Check List - Documentos de Processo de Registro</option>
+<option value="1186">Check List - Documentos de Processo de Revalidação</option>
+<option value="849">Checklist - Ajuda de Custo - Anexo I</option>
+<option value="854">Checklist - Anistiado</option>
+<option value="1161">Checklist - Ateste de Fatura/Nota Fiscal</option>
+<option value="859">Checklist - Cargo em Comissao - sem Vinculo</option>
+<option value="1588">Checklist - Conformidade Documental</option>
+<option value="1234">Checklist - Contratação Direta (PR01 e 02/2022)</option>
+<option value="863">Checklist - Contrato Temporário</option>
+<option value="862">Checklist - Exercício Descentralizado de Carreira</option>
+<option value="1142">Checklist - Licitação Aquisição Bens IN 05/2017</option>
+<option value="1108">Checklist - Pregão Eletrônico</option>
+<option value="1090">Checklist - Repactuação de Preço</option>
+<option value="1222">Checklist Ateste Nota Fiscal de Contrato Serviços</option>
+<option value="860">Checklist Cargo Comis Servid Municipio ou Estado</option>
+<option value="861">Checklist Cargo em Comiss Servid Efetivo Federal</option>
+<option value="858">Checklist Cargo em Comissão Servidor Efetiv IPHAN</option>
+<option value="1578">Checklist Convênio Simplificado</option>
+<option value="1630">Checklist Convênio simplificado COM obra</option>
+<option value="1631">Checklist Convênio simplificado SEM obra</option>
+<option value="1443">Checklist Declaração Tombamento Antigos Quilombos</option>
+<option value="1160">Checklist Recursos à Presidência (Autorização)</option>
+<option value="1159">Checklist Recursos à Presidência (Fiscalização)</option>
+<option value="1476">Check-list TEC</option>
+<option value="1473">Checklist Termo de Colaboração/Fomento</option>
+<option value="125">Cheque</option>
+<option value="210">CNPJ</option>
+<option value="1190">Código</option>
+<option value="1515">Complementação</option>
+<option value="1599">Complementação de FCA</option>
+<option value="1600">Complementação de Projeto</option>
+<option value="1601">Complementação de Relatório</option>
+<option value="35">Comprovante</option>
+<option value="14">Comunicado</option>
+<option value="271">Confirmação</option>
+<option value="197">Consulta</option>
+<option value="36">Conta</option>
+<option value="72">Conteúdo de Mídia</option>
+<option value="126">Contracheque</option>
+<option value="112">Contrarrazões</option>
+<option value="37">Contrato</option>
+<option value="1460">Contrato de Cessão de Imóvel</option>
+<option value="1444">Contrato Lei 8745/1993</option>
+<option value="1396">Controle de Circulação de Viatura</option>
+<option value="105">Convenção</option>
+<option value="127">Convite</option>
+<option value="1071">Cópia de página web</option>
+<option value="1035">Corregedoria - Ata Deliberativa</option>
+<option value="1043">Corregedoria - Citação</option>
+<option value="1089">Corregedoria - Defesa</option>
+<option value="1036">Corregedoria - Intimação</option>
+<option value="1038">Corregedoria - Notificação de Oitiva</option>
+<option value="1037">Corregedoria - Notificação Prévia</option>
+<option value="1044">Corregedoria - Relatório Final</option>
+<option value="1102">Corregedoria - Termo de Compromisso</option>
+<option value="1041">Corregedoria - Termo de Diligência</option>
+<option value="1042">Corregedoria - Termo de Indiciação</option>
+<option value="1045">Corregedoria - Termo de Interrogatório</option>
+<option value="1040">Corregedoria - Termo de Oitiva de Declarante</option>
+<option value="1039">Corregedoria - Termo de Oitiva de Testemunha</option>
+<option value="1046">Corregedoria - Termo de Revelia</option>
+<option value="1034">Corregedoria Ata de Instalação Início Trabalhos</option>
+<option value="38">Correspondência</option>
+<option value="29">Cota</option>
+<option value="272">Cotação</option>
+<option value="88">CPF</option>
+<option value="128">Crachá</option>
+<option value="98">Credencial</option>
+<option value="129">Cronograma</option>
+<option value="39">Croqui</option>
+<option value="130">Currículo</option>
+<option value="40">Dacon</option>
+<option value="1516">Dados pessoais ou dados pessoais sensíveis</option>
+<option value="198">Debênture</option>
+<option value="41">Decisão</option>
+<option value="1467">Decisão Chefia Portaria Iphan 289/2025</option>
+<option value="1470">Decisão Recurso Presidente Port 289/2025</option>
+<option value="1469">Decisão Recurso Superinte Port 289/2025</option>
+<option value="83">Declaração</option>
+<option value="1447">Declaração - Aposentadoria (Acumulação)</option>
+<option value="867">Declaração - Não Participação em Sociedade Privada</option>
+<option value="1321">Declaração Adequação contratação Plan. Esratégico</option>
+<option value="878">Declaração de Acumulação de Cargo</option>
+<option value="1456">Declaração de Ausência de Impedimento e Suspeição</option>
+<option value="879">Declaração de Bens</option>
+<option value="856">Declaração de Bens - Isento de Declarar IR</option>
+<option value="1517">Declaração de Ciência de Teor</option>
+<option value="1243">Declaração de Comprovação de Tempo de Serviço</option>
+<option value="1184">Declaração de disponibilidade orçamentária</option>
+<option value="1518">Declaração de endosso financeiro</option>
+<option value="1519">Declaração de endosso institucional</option>
+<option value="1394">Declaração de Exercícios Anteriores</option>
+<option value="865">Declaração de Ideoneidade - Servidor Efetivo</option>
+<option value="864">Declaração de Idoneidade - Contrato</option>
+<option value="866">Declaração de Não Acúmulo de Cargos</option>
+<option value="1520">Declaração de Participação do Coordenador e/ou Equipe responsável pela elaboração do produto</option>
+<option value="1521">Declaração de recebimento de coleção arqueológica</option>
+<option value="868">Declaração de Residência</option>
+<option value="1322">Declaração de utilização de modelos da AGU</option>
+<option value="1275">Declaração de utilização linha telefônica celular</option>
+<option value="869">Declaração de Vínculos Familiares</option>
+<option value="1162">Declaração DPE</option>
+<option value="1088">Declaração Exercício de Atividades Profissionais</option>
+<option value="857">Declaração Não Recebimento de Seguro Desemprego</option>
+<option value="1415">Declaração perfil Assessor SCDP Anexo II</option>
+<option value="1596">Declarações de Participação do Coordenador e/ou Equipe responsável pela elaboração do produto</option>
+<option value="131">Decreto</option>
+<option value="42">Defesa</option>
+<option value="43">Degravacão</option>
+<option value="132">Deliberação</option>
+<option value="44">Demonstração</option>
+<option value="133">Demonstrativo</option>
+<option value="45">Denúncia</option>
+<option value="134">Depoimento</option>
+<option value="1455">Desativação de Acessos e Outras Providências</option>
+<option value="1384">Desativar / Reativar Usuários da Rede IPHAN</option>
+<option value="1522">Desligamento/Alteração de Arqueólogo Coordenador</option>
+<option value="5">Despacho</option>
+<option value="1583">Despacho Homologação de Monitoramento Avaliação</option>
+<option value="1221">Diagnóstico</option>
+<option value="135">Diário</option>
+<option value="1317">Diligência</option>
+<option value="77">Diploma</option>
+<option value="199">Diretriz</option>
+<option value="136">Dissertação</option>
+<option value="1361">Documentação</option>
+<option value="1597">Documentação complementar</option>
+<option value="264">Documento</option>
+<option value="1523">Documento comprobatório de obras emergenciais ou de urgência</option>
+<option value="1524">Documento comprobatório de recebimento de coleção arqueológica</option>
+<option value="1475">Documento de Teste</option>
+<option value="1525">Documento para comprovação de Área significativamente alterada</option>
+<option value="1427">Documento SIADS</option>
+<option value="809">Documentos SIAFI</option>
+<option value="137">Dossiê</option>
+<option value="68">Edital</option>
+<option value="1210">Edital de Ciência de Eliminação de Documentos</option>
+<option value="30">E-mail</option>
+<option value="138">Embargos</option>
+<option value="139">Emenda</option>
+<option value="1248">EMENTA</option>
+<option value="1078">Encarte</option>
+<option value="140">Escala</option>
+<option value="108">Esclarecimento</option>
+<option value="141">Escritura</option>
+<option value="49">Escrituração</option>
+<option value="1073">Espelho</option>
+<option value="50">Estatuto</option>
+<option value="1171">Estudo</option>
+<option value="1359">Estudo Técnico Preliminar</option>
+<option value="265">Exposição</option>
+<option value="142">Exposição de Motivos</option>
+<option value="51">Extrato</option>
+<option value="971">Extrato de Publicação no Diário Oficial da União</option>
+<option value="1167">Extrato de Reunião</option>
+<option value="1276">Extrato de Termo de Ajustamento de Conduta</option>
+<option value="84">Fatura</option>
+<option value="143">Ficha</option>
+<option value="1118">Ficha de Avaliação - Portaria 187/2010</option>
+<option value="1527">Ficha de Cadastro de sítio arqueológicos</option>
+<option value="1278">Ficha de Cadastro de Veículo Oficial</option>
+<option value="943">Ficha de Caracterização de Atividade</option>
+<option value="1307">Ficha de Exame Médico Periódico - EMP</option>
+<option value="1413">Ficha de Proposta FNC</option>
+<option value="1424">Ficha Solic Afastament País Missão Oficial Anexo X</option>
+<option value="1420">Fluxo</option>
+<option value="144">Fluxograma</option>
+<option value="200">Folder</option>
+<option value="99">Folha</option>
+<option value="1141">Folha de Aprovação para Dissertação do Mestrado</option>
+<option value="1127">Folha de Ponto</option>
+<option value="1023">Folha Padrão do Mestrado - MEP</option>
+<option value="266">Folheto</option>
+<option value="145">Formulário</option>
+<option value="888">Formulário - Alteração Plano de Saúde</option>
+<option value="1155">Formulário - Avaliação de Reação</option>
+<option value="1103">Formulário - Demanda Extra ou Adicional de Evento</option>
+<option value="991">Formulário - Inscrição em Eventos de Capacitação</option>
+<option value="1139">Formulário - PAC/PGC</option>
+<option value="1345">Formulário - Progressão Funcional</option>
+<option value="1431">Formulário Recurso para Chefia Máxima da Unidade</option>
+<option value="1382">Formulário 3 - Pedido de Passkey - SIAFI</option>
+<option value="1471">Formulário Atualização de Serviço</option>
+<option value="1505">Formulário Avaliação GD - Ações e programas da UA</option>
+<option value="1509">Formulário Avaliação GD - Apuração metas indiv.</option>
+<option value="1508">Formulário Avaliação GD - Consolidação</option>
+<option value="1506">Formulário Avaliação GD - Equipes de trabalho</option>
+<option value="1510">Formulário Avaliação GD - Fatores</option>
+<option value="1507">Formulário Avaliação GD - Metas individuais</option>
+<option value="1511">Formulário Avaliação GD - Reconsideração</option>
+<option value="1285">Formulário Cadastro de Programa - TED</option>
+<option value="1178">Formulário Cadastro de Sistemas Estruturantes</option>
+<option value="1454">Formulário Cadastro Programa - Discric./Legais</option>
+<option value="1591">Formulário Capacitação Avaliação de Bens Imóveis</option>
+<option value="1364">Formulário CIDE</option>
+<option value="1281">Formulário Consulta Provimento CCE e FCE 10 a 18</option>
+<option value="1614">Formulário de abertura de conta salário - Estágio</option>
+<option value="1166">Formulário de Abertura de Processo Seletivo</option>
+<option value="1255">Formulário de Ajustes no SEI/Iphan</option>
+<option value="851">Formulário de Alteração de Dados Bancários C/C</option>
+<option value="1385">Formulário de Análise de Recurso - Comissão</option>
+<option value="1179">Formulário de atendimento ar condicionado</option>
+<option value="1463">Formulário de atualização de serviço portal gov</option>
+<option value="1389">Formulário de cadastro - Aposentado e pensionista</option>
+<option value="871">Formulário de Cadastro de Dependentes</option>
+<option value="1414">Formulário de Cadastro SCDP Anexo I</option>
+<option value="1140">Formulário de Cadastro SIASG</option>
+<option value="1144">Formulário de Demanda Editorial</option>
+<option value="1282">Formulário de Desfazimento de Bens</option>
+<option value="1623">Formulário de Feedback - Colaborador Terceirizado</option>
+<option value="1200">Formulário de Inclusão UORG - SIADS</option>
+<option value="86">Formulário de Ouvidoria</option>
+<option value="1421">Formulário de Plano de Viagem Remoção Anexo VIII</option>
+<option value="1512">Formulário de Plano Interno - Despesa Finalística</option>
+<option value="1331">Formulário de Posicionamento Sanção ou Veto</option>
+<option value="1430">Formulário de Recurso para a Chefia Imediata - PGD</option>
+<option value="1466">Formulário de Requerimento Portaria Iphan 289/2025</option>
+<option value="1177">Formulário de Requisição de Material</option>
+<option value="1407">Formulário de Resposta ao Cidadão</option>
+<option value="1408">Formulário de Resposta aos Recursos</option>
+<option value="841">Formulário de solicitação de vídeoconferência</option>
+<option value="1340">Formulário de Solicitação e Aparelho e/ou Linha Te</option>
+<option value="1256">Formulário de Suprimento de Fundos</option>
+<option value="1392">Formulário GDAC Recurso CAD</option>
+<option value="1156">Formulário Instrutório Prorrog Parec Ref Anexo I</option>
+<option value="1474">Formulário Interposição Recurso Portaria 289/2025</option>
+<option value="855">Formulário Pagamento de Substituição</option>
+<option value="987">Formulário para Solicitação de Vaga</option>
+<option value="1468">Formulário Parecer Técn Análise Req Port 289/2025</option>
+<option value="1435">Formulário Plano de Viagem Colab Eventua Anexo VI</option>
+<option value="1417">Formulário Plano de Viagem para Servidor Anexo IV</option>
+<option value="1066">Formulário Posicionamento Proposição Legislativa</option>
+<option value="1438">Formulário Postulante - níveis 1 a 4</option>
+<option value="1440">Formulário Postulante - níveis 12 a 14</option>
+<option value="1442">Formulário Postulante - níveis 15 a 17</option>
+<option value="1439">Formulário Postulante - níveis 5 a 8</option>
+<option value="1441">Formulário Postulante - níveis 9 a 11</option>
+<option value="1112">Formulário Reembolso Utilização de Veículo Próprio</option>
+<option value="1056">Formulário Revogação Acesso Transferegov</option>
+<option value="1374">Formulário Solicitação Evento Capacitação SEI</option>
+<option value="1462">Formulário Solicitação Vaga Concorrência Mestrado</option>
+<option value="1087">Fotografia</option>
+<option value="1605">Fotografias da ADA</option>
+<option value="201">Grade Curricular</option>
+<option value="146">Guia</option>
+<option value="839">Guia de Malote - Remessa</option>
+<option value="79">Histórico</option>
+<option value="1603">Histórico detalhado das alterações na área</option>
+<option value="1604">Histórico do empreendimento junto ao órgão ambiental competente</option>
+<option value="1602">Histórico documental da ocupação da área</option>
+<option value="1145">Histórico Escolar</option>
+<option value="847">Identificação de acervos</option>
+<option value="109">Impugnação</option>
+<option value="1436">IMR Almoxarifado Virtual</option>
+<option value="1437">IMR Consolidação Almoxarifado Virtual</option>
+<option value="937">IN01 - Aprovação da Análise de Riscos</option>
+<option value="936">IN01 - Aprovação da Pesquisa de Preços</option>
+<option value="933">IN01 - Aprovação do Estudo Técnico Preliminar</option>
+<option value="935">IN01 - Aprovação do Termo de Referência</option>
+<option value="938">IN01 - Aprovação do TR - Autoridade Competente</option>
+<option value="932">IN01 - Aprovação ETP - AutCompAdmin</option>
+<option value="1106">IN01 - Ateste de Termo de Referência</option>
+<option value="1061">IN01 - Estudo Técnico Preliminar</option>
+<option value="1092">IN01 - Lista de Verificação</option>
+<option value="1260">IN01 - Lista de Verificação AGU</option>
+<option value="813">IN01 - Oficialização de Demanda</option>
+<option value="222">IN01 - Ordem de Serviço</option>
+<option value="1065">IN01 - Recebimento Definitivo</option>
+<option value="1064">IN01 - Recebimento Provisório</option>
+<option value="1060">IN01 - Termo de Referência</option>
+<option value="1283">IN94 - Documento de Formalização da Demanda</option>
+<option value="1289">IN94 - Estudo Técnico Preliminar (TIC)</option>
+<option value="1290">IN94 - Estudo Técnico Preliminar (TIC) 2023</option>
+<option value="1300">IN94 - Ordem de Serviço/Fornecimento de Bens</option>
+<option value="988">Inclusão na Folha de Pagamento - Estágio</option>
+<option value="202">Indicação</option>
+<option value="217">Indicação de Integrante Técnico</option>
+<option value="92">Informação</option>
+<option value="835">Informação Básica - Portaria 420 de 2010 - Anexo I</option>
+<option value="16">Informe</option>
+<option value="998">INN05 - Documento de Formalização de Demanda</option>
+<option value="219">INN05 - Estudo Técnico Preliminar da Contratação</option>
+<option value="1001">INN05 - Instrumento Medição Resultado (IMR)</option>
+<option value="1104">INN05 - Lista de Verificação Serviços Continuados</option>
+<option value="1002">INN05 - Modelo de Proposta</option>
+<option value="1000">INN05 - Ordem de Serviço</option>
+<option value="1126">INN05 - Portaria de Fiscalização de Contrato</option>
+<option value="1005">INN05 - Termo de Vistoria</option>
+<option value="273">Inscrição</option>
+<option value="1383">Inst. Avaliação Desempenho Estágio Probatório</option>
+<option value="218">Instituição da Equipe de Planej. da Contratação</option>
+<option value="203">Instrução</option>
+<option value="824">Instrução Liquidação Pagamento</option>
+<option value="1146">Instrução Normativa</option>
+<option value="1270">Instrumento de Medição de Resultado</option>
+<option value="1031">Instrumento Particular de Acordo Extrajudicial</option>
+<option value="110">Intenção</option>
+<option value="147">Inventário</option>
+<option value="1528">Inventário de bens arqueológicos móveis</option>
+<option value="1019">Juízo de Admissibilidade - Comissão de Ética</option>
+<option value="1213">Julgamento de Recurso</option>
+<option value="1100">Justificativa para prorrogação contratual</option>
+<option value="54">Laudo</option>
+<option value="1018">Laudo - Equipamento / Material de Informática</option>
+<option value="1119">Laudo de Fiscalização</option>
+<option value="148">Lei</option>
+<option value="1582">Levantamento e Diagnóstico do Processo DIVMEP/SEP</option>
+<option value="55">Licença</option>
+<option value="1220">Licença Capacitação Anexo III - Form Marcação</option>
+<option value="1529">Licenças Ambientais</option>
+<option value="100">Lista</option>
+<option value="1168">Lista de Presença em Reunião</option>
+<option value="1304">Lista de Verificação - ACT Org. da Sociedade Civil</option>
+<option value="1229">Lista de Verificação - Adesão SRP (v. MAI/2020)</option>
+<option value="1577">Lista de Verificação - Aditivos Contratuais</option>
+<option value="1080">Lista de Verificação - Anexo II ON/SEGES/MPDG 2/16</option>
+<option value="1079">Lista de Verificação - Contratação de Serviços</option>
+<option value="1294">Lista de Verificação AGU - Contratação Direta</option>
+<option value="1293">Lista de Verificação-TIC-Lei 14.133/2021(set/2024)</option>
+<option value="1239">Lista Verificação Regularidade Proc. Sancionador</option>
+<option value="1238">Lista Verificação Rescisão Unilateral Contratual</option>
+<option value="267">Listagem</option>
+<option value="1120">Listagem de Eliminação de Documentos</option>
+<option value="1314">Listas de verificação - aditamentos contratuais</option>
+<option value="56">Livro</option>
+<option value="69">Mandado</option>
+<option value="1169">Manifestação Conclusiva</option>
+<option value="149">Manifesto</option>
+<option value="113">Manual</option>
+<option value="150">Mapa</option>
+<option value="1189">Mapa Comparativo de Preços</option>
+<option value="1398">Mapa de Controle Desempenho Veículo Oficial</option>
+<option value="999">Mapa de Gerenciamento de Riscos</option>
+<option value="1062">Mapa de Gerenciamento de Riscos - TI</option>
+<option value="886">Mapa de Tempo de Serviço</option>
+<option value="885">Mapa de Vencimentos</option>
+<option value="212">Matéria</option>
+<option value="78">Material</option>
+<option value="1204">Matrícula de imóvel</option>
+<option value="1358">Matriz de Gerenciamento de Riscos</option>
+<option value="151">Medida Provisória</option>
+<option value="12">Memorando</option>
+<option value="13">Memorando-Circular</option>
+<option value="57">Memória</option>
+<option value="1352">Memória de Reunião -</option>
+<option value="152">Memorial</option>
+<option value="153">Mensagem</option>
+<option value="204">Minuta</option>
+<option value="1356">Minuta - Termo de Fomento</option>
+<option value="1635">Minuta Acordo de Cooperação Técnica</option>
+<option value="1266">Minuta autorização contratação inexigibilidade</option>
+<option value="1273">Minuta Autorização de Inexigibilidade - Lei 14.133</option>
+<option value="1370">Minuta Convênio REG. SIMPL. - COM obras/serv. eng</option>
+<option value="1372">Minuta Convênio REG. SIMPL. - SEM obras/serv. eng</option>
+<option value="1354">Minuta de Acordo de Cooperação</option>
+<option value="250">Minuta de Acordo de Cooperação Técnica</option>
+<option value="1263">Minuta de Aplicação de Penalidade</option>
+<option value="257">Minuta de Ata de Registro de Preços</option>
+<option value="1148">Minuta de Autorização de Dispensa</option>
+<option value="251">Minuta de Contrato</option>
+<option value="1576">Minuta de Contrato de Cessão de Imóvel</option>
+<option value="1334">Minuta de Convênio - COM obras e serviços de eng</option>
+<option value="1336">Minuta de Convênio - SEM obras e serviços de eng</option>
+<option value="1268">Minuta de Decisão</option>
+<option value="1333">Minuta de Decreto</option>
+<option value="252">Minuta de Edital</option>
+<option value="1240">Minuta de Extrato (ou Aviso)</option>
+<option value="1187">Minuta de Instrução Normativa</option>
+<option value="1375">Minuta de Ofício</option>
+<option value="1636">Minuta de Plano de Trabalho ACT</option>
+<option value="235">Minuta de Portaria</option>
+<option value="1153">Minuta de Portaria de Pessoal</option>
+<option value="241">Minuta de Projeto Básico</option>
+<option value="1615">Minuta de Regulamento</option>
+<option value="236">Minuta de Resolução</option>
+<option value="243">Minuta de Termo Aditivo</option>
+<option value="1110">Minuta de Termo de Adesão de Serviço Voluntário</option>
+<option value="1163">Minuta de Termo de Cessão Provisória</option>
+<option value="1030">Minuta de Termo de Colaboração</option>
+<option value="1250">Minuta de Termo de Compartilhamento</option>
+<option value="1077">Minuta de Termo de Compromisso</option>
+<option value="1182">Minuta de Termo de Doação</option>
+<option value="1049">Minuta de Termo de Referência</option>
+<option value="246">Minuta de Termo de Rescisão Amigável</option>
+<option value="248">Minuta de Termo de Rescisão Unilateral</option>
+<option value="1628">Minuta Plano de Trabalho Convênio Simplificado</option>
+<option value="1010">Minuta Ratificação Dispensa</option>
+<option value="997">Minuta Reconhecimento Ratificação Inexigibilidade</option>
+<option value="1158">Minuta Termo Aditivo Aprovada Parec Ref Anexo III</option>
+<option value="1063">Minuta Termo de Ajustamento de Conduta - TAC</option>
+<option value="154">Moção</option>
+<option value="1330">Modelo de Documento de Teste</option>
+<option value="1262">Modelo de Proposta</option>
+<option value="213">Movimentação</option>
+<option value="58">Norma</option>
+<option value="1086">Norma Interna</option>
+<option value="91">Nota</option>
+<option value="1622">Nota Conceitual</option>
+<option value="952">Nota de Auditoria</option>
+<option value="1451">Nota de Crédito</option>
+<option value="814">Nota Fiscal</option>
+<option value="1325">Nota Informativa</option>
+<option value="900">Nota Técnica</option>
+<option value="1299">Nota Técnica - Tombamento dos Quilombos</option>
+<option value="1611">Nota Técnica Conjunta</option>
+<option value="59">Notificação</option>
+<option value="1138">Notificação Administrativa</option>
+<option value="1081">Notificação de Aplicação de Penalidade - Pt. 80/17</option>
+<option value="970">Notificação de Penalidade - Portaria 187/2010</option>
+<option value="1117">Notificação p/ Apresent. de Doc. - Portaria 187/10</option>
+<option value="11">Ofício</option>
+<option value="205">Ofício-Circular</option>
+<option value="206">Orçamento</option>
+<option value="207">Ordem</option>
+<option value="1012">Ordem de Serviço - Diária de Colaborador</option>
+<option value="1277">Ordem de Serviço - Tradução/Revisão</option>
+<option value="1397">Ordem de Serviço - Veículo</option>
+<option value="1099">Ordem de Serviço de Editoração</option>
+<option value="155">Organograma</option>
+<option value="156">Orientação</option>
+<option value="948">Orientação Administrativa</option>
+<option value="1530">PAA - Projeto de Acompanhamento Arqueológico</option>
+<option value="1531">PAIPA ? Projeto de Avaliação de Impacto aos Bens Arqueológicos</option>
+<option value="157">Panfleto</option>
+<option value="1532">PAPIPA - Projeto de Avaliação de Potencial de Impacto ao Patrimônio Arqueológico</option>
+<option value="1197">Parecer</option>
+<option value="846">Parecer - Ficha de Caracterização de Atividade FCA</option>
+<option value="1128">Parecer - Fiscalização em IGP</option>
+<option value="845">Parecer - Potencial de Impacto Arqueológico</option>
+<option value="895">Parecer - Programa de Gestão do Patr Arqueológico</option>
+<option value="896">Parecer - Projeto de Avaliação de Impacto Arqueol</option>
+<option value="897">Parecer - Projeto de Salvamento Arqueológico</option>
+<option value="898">Parecer - Proposta de Acompanhamento Arqueológico</option>
+<option value="899">Parecer - Relatório de Pesquisa Arqueológica</option>
+<option value="1125">Parecer - Remessa para Análise Bens Arq. Exterior</option>
+<option value="1195">Parecer Análise Cadastro de Sítios Arqueológicos</option>
+<option value="1627">Parecer Análise Recursal - 2ª Inst. Lic. Ambiental</option>
+<option value="1626">Parecer Análise Recursal- 1ª Inst. Lic. Ambiental</option>
+<option value="1165">Parecer da Auditoria Interna</option>
+<option value="956">Parecer da Procuradoria Federal - IPHAN</option>
+<option value="1446">Parecer de Análise de Transferência Especial</option>
+<option value="1202">Parecer de Mérito</option>
+<option value="1586">Parecer de TAC - Portaria IPHAN nº 159/16</option>
+<option value="1500">Parecer FCA Arq - IN 06/2025</option>
+<option value="1499">Parecer FCA Imat - IN 06/2025</option>
+<option value="1496">Parecer FCA Mat - IN 06/2025</option>
+<option value="965">Parecer Jurídico</option>
+<option value="1124">Parecer Mov Bens Arqueológicos em Territ. Nacional</option>
+<option value="1621">Parecer PAA Arq IN 01/2015</option>
+<option value="1487">Parecer PAA Proj/Acomp/Arq - IN 06/2025</option>
+<option value="1610">Parecer PAIPA - IN 01/2015</option>
+<option value="1488">Parecer PAIPA Arq - IN 06/2025</option>
+<option value="1489">Parecer PAPIPA Arq - IN 06/2025</option>
+<option value="1633">Parecer PAPIPA IN 01/2015</option>
+<option value="1607">Parecer PGBIR - IN 01/2015</option>
+<option value="1484">Parecer PGBIR Imat - IN 06/2025</option>
+<option value="1617">Parecer PGPA Arq IN 01/2015</option>
+<option value="1616">Parecer PGPA Arq IN 06/2025</option>
+<option value="1485">Parecer PGPM Mat - IN 06/2025</option>
+<option value="1498">Parecer PIEP - IN 06/2025</option>
+<option value="1326">Parecer PNPI - Análise Téc. Plano de Trabalho TC</option>
+<option value="1490">Parecer PPSA Preserv/Sít/Arq - IN 06/2025</option>
+<option value="1491">Parecer PSA Proj/Salv/Arq - IN 06/2025</option>
+<option value="1492">Parecer RAA Arq - IN 06/2025</option>
+<option value="1618">Parecer RAA Arq IN 01/2015</option>
+<option value="1608">Parecer RAIBIR - IN 01/2015</option>
+<option value="1494">Parecer RAIBIR Imat - IN 06/2025</option>
+<option value="1609">Parecer RAIPA - IN 01/2015</option>
+<option value="1493">Parecer RAIPA Arq - IN 06/2025</option>
+<option value="1486">Parecer RAIPM Mat - IN 06/2025</option>
+<option value="1503">Parecer RAPIPA Arq - IN 06/2025</option>
+<option value="1634">Parecer RAPIPA IN 01/2015</option>
+<option value="1620">Parecer RGPA Arq IN 01/2015</option>
+<option value="1619">Parecer RGPA Arq IN 06/2025</option>
+<option value="1501">Parecer RIEP - IN 06/2025</option>
+<option value="1482">Parecer RPGBIR Imat - IN 06/2025</option>
+<option value="1483">Parecer RPGPM Mat - IN 06/2025</option>
+<option value="1495">Parecer RPPSA Sít/Arq - IN 06/2025</option>
+<option value="1497">Parecer RPSA Salv/Arq - IN 06/2025</option>
+<option value="1585">Parecer Téc Conclusivo Termo Colaboração Fomento</option>
+<option value="191">Parecer Técnico</option>
+<option value="836">Parecer Técnico - Portaria 420 de 2010 Anexo 2</option>
+<option value="1259">Parecer Técnico-Pedagógico</option>
+<option value="158">Passaporte</option>
+<option value="159">Pauta</option>
+<option value="1291">PCDP - Proposta de Concessão - Diárias e Passagens</option>
+<option value="107">Pedido</option>
+<option value="1199">Pedido de Esclarecimento</option>
+<option value="929">Pedido de Inscrição em Eventos de Capacitação</option>
+<option value="1533">Pedido de publicação/renovação/retificação de portaria autorizativa</option>
+<option value="1534">Pedido de reconsideração (reanálise/reenquadramento)</option>
+<option value="1011">Perfil Profissiografico Previdenciario PPP</option>
+<option value="1254">Pesquisa de Viabilidade do SEI</option>
+<option value="160">Petição</option>
+<option value="1535">PGBIR - Programa de Gestão dos Bens Imateriais Registrados</option>
+<option value="1318">PGD - Ateste PEUE</option>
+<option value="1319">PGD - Ateste Plano de Trabalho</option>
+<option value="1323">PGD - checklist (elaboração PEUE)</option>
+<option value="1320">PGD - TCR</option>
+<option value="1536">PIEP ? Projeto Integrado de Educação Patrimonial ? Arqueologia</option>
+<option value="1537">PIEP ? Projeto Integrado de Educação Patrimonial ? Imaterial</option>
+<option value="1538">PIEP ? Projeto Integrado de Educação Patrimonial ? Material</option>
+<option value="1021">Planejamento</option>
+<option value="104">Planilha</option>
+<option value="1096">Planilha de Afastamento do País</option>
+<option value="73">Plano</option>
+<option value="1341">Plano Anual</option>
+<option value="1014">Plano Anual Auditoria Interna PAINT</option>
+<option value="1632">PLANO DE AÇÃO</option>
+<option value="1593">Plano de Capacitação Anual (PCA)</option>
+<option value="238">Plano de Gerenciamento de Projeto - PGP</option>
+<option value="221">Plano de Inserção</option>
+<option value="1072">Plano de Integração Plataforma Cidadania Digital</option>
+<option value="1355">Plano de Trabalho - ACT (modelo AGU)</option>
+<option value="1353">Plano de Trabalho - Contratação Temporária</option>
+<option value="1472">Plano de Trabalho Colaboração/Fomento</option>
+<option value="1629">Plano de Trabalho Convênio Simplificado</option>
+<option value="1309">Plano de Trabalho do Servidor</option>
+<option value="1004">Plano de Trabalho Simplificado</option>
+<option value="1286">Plano de Trabalho Simplificado (dispensa de TED)</option>
+<option value="1084">Plano de Trabalho Simplificado DPE</option>
+<option value="1478">Plano de Trabalho TEC</option>
+<option value="1247">Plano de Transformação Digital</option>
+<option value="161">Planta</option>
+<option value="10">Portaria</option>
+<option value="1107">Portaria Conjunta</option>
+<option value="1154">Portaria de Pessoal</option>
+<option value="1625">Prancha</option>
+<option value="162">Precatório</option>
+<option value="1287">Pré-Reserva Auditório Estúdio Iphan Brasília - DF</option>
+<option value="255">Prestação de Contas de Suprimento de Fundos</option>
+<option value="1342">Processo</option>
+<option value="803">Processo Digitalizado - Volume</option>
+<option value="60">Procuração</option>
+<option value="1131">Procuração Eletrônica Especial</option>
+<option value="1136">Procuração Eletrônica Simples</option>
+<option value="1032">Produto</option>
+<option value="163">Programa</option>
+<option value="1624">Programa de Avaliação por Tema (PAPT)</option>
+<option value="1539">Programa de Gestão do Patrimônio Arqueológico</option>
+<option value="1540">Programa de Gestão do Patrimônio Material PGPM</option>
+<option value="1541">Programa ou Relatório de Gestão dos Bens Culturais Tombados, Valorados e Registrados</option>
+<option value="1452">Programação Financeira</option>
+<option value="101">Projeto</option>
+<option value="215">Projeto Básico</option>
+<option value="1543">Projeto de Avaliação de Impacto ao Patrimônio Material</option>
+<option value="1542">Projeto de Avaliação de Impacto aos Bens Imateriais Registrados</option>
+<option value="1544">Projeto de Monitoramento Arqueológico</option>
+<option value="1545">Projeto de Preservação in situ de sítio arqueológico</option>
+<option value="1546">Projeto de Salvamento Arqueológico</option>
+<option value="1594">Projetos de Licenciamento Ambiental</option>
+<option value="75">Prontuário</option>
+<option value="208">Pronunciamento</option>
+<option value="85">Proposta</option>
+<option value="253">Proposta de Concessão de Suprimento de Fundos</option>
+<option value="1405">Prorrogação de Ofício - Convênio</option>
+<option value="1404">Prorrogação de Ofício - Dispensa de TED</option>
+<option value="1403">Prorrogação de Ofício - TED</option>
+<option value="1406">Prorrogação de Ofício - Term.Colaboração/Fomento</option>
+<option value="164">Prospecto</option>
+<option value="165">Protocolo</option>
+<option value="1411">Protocolo de Intenções e Providências</option>
+<option value="166">Prova</option>
+<option value="103">Publicação</option>
+<option value="167">Questionário</option>
+<option value="1547">RAIBIR - Relatório de Avaliação de Impacto aos Bens Imateriais Registrados</option>
+<option value="1548">RAIPA - Relatório de Avaliação de Impacto ao Patrimônio Arqueológico</option>
+<option value="1549">RAIPM Relatório de Avaliação de Impacto ao Patrimônio Material</option>
+<option value="1550">RAPIPA - Relatório de Avaliação de Impacto ao Patrimônio Arqueológico</option>
+<option value="259">Ratificação de Dispensa</option>
+<option value="168">Receita</option>
+<option value="169">Recibo</option>
+<option value="1017">Recibo de Venda de Publicações</option>
+<option value="976">Recibo Eletrônico de Protocolo</option>
+<option value="61">Reclamação</option>
+<option value="258">Reconhecimento e Ratificação de Inexigibilidade</option>
+<option value="111">Recurso</option>
+<option value="1386">Recurso à Comissão Especial do Estágio Probatório</option>
+<option value="982">Recurso Avaliação Temporários Anexo 3 (avaliado)</option>
+<option value="983">Recurso Avaliação Temporários Anexo 3 (CODEP)</option>
+<option value="994">Reembolso Capacitação Língua Estrangeira</option>
+<option value="27">Referendo</option>
+<option value="170">Regimento</option>
+<option value="1114">Registro de Incorp. Mat. Permanente - Tombamento</option>
+<option value="1253">Registro de Responsabilidade Técnica (RRT)</option>
+<option value="230">Registro de Reunião</option>
+<option value="171">Regulamento</option>
+<option value="102">Relação</option>
+<option value="850">Relação de Mobiliário - Ajuda de Custo - Anexo II</option>
+<option value="63">Relatório</option>
+<option value="1020">Relatório - Comissão de Ética</option>
+<option value="1606">Relatório Análise Financeira Prest Contas Final</option>
+<option value="1047">Relatório Anual Atividades Auditoria Interna RAINT</option>
+<option value="1551">Relatório de Acompanhamento Arqueológico</option>
+<option value="951">Relatório de Assistência Técnica</option>
+<option value="1029">Relatório de Atividades</option>
+<option value="954">Relatório de Auditoria</option>
+<option value="1552">Relatório de Avaliação de Impacto ao Patrimônio Arqueológico</option>
+<option value="1553">Relatório de Avaliação de Impacto aos Bens Culturais Tombados, Valorados e Registrados</option>
+<option value="1554">Relatório de Avaliação de Potencial de Impacto ao Patrimônio Arqueológico</option>
+<option value="1459">Relatório de Avaliação de Qualidade de Produtos Entregues</option>
+<option value="237">Relatório de Concessão de Suprimento de Fundos</option>
+<option value="1196">Relatório de Cumprimento do Objeto de TED</option>
+<option value="1272">Relatório de Fiscalização Administrativa</option>
+<option value="1338">Relatório de Fiscalização de Eventos</option>
+<option value="1271">Relatório de Fiscalização Técnica</option>
+<option value="1555">Relatório de Gestão do Patrimônio Arqueológico</option>
+<option value="1556">Relatório de Gestão do Patrimônio Material</option>
+<option value="1557">Relatório de Gestão dos Bens Imateriais Registrados</option>
+<option value="974">Relatório de Julgamento - Portaria 187/2010</option>
+<option value="1598">Relatório de Licenciamento Ambiental</option>
+<option value="1558">Relatório de Monitoramento Arqueológico</option>
+<option value="1339">Relatório de Pagamento</option>
+<option value="955">Relatório de Participação em Ações de Capacitação</option>
+<option value="1559">Relatório de Preservação in situ de sítio arqueológico</option>
+<option value="1009">Relatório de Prestação de Contas</option>
+<option value="844">Relatório de Realização de Evento</option>
+<option value="1560">Relatório de Salvamento arqueológico</option>
+<option value="1425">Relatório de Viagem Circunstanciado Anexo XI</option>
+<option value="1422">Relatório de Viagem Colaborador Eventual Anexo VII</option>
+<option value="1423">Relatório de Viagem para Remoção Anexo IX</option>
+<option value="1418">Relatório de Viagem para Servidor Anexo V</option>
+<option value="1093">Relatório do PAE</option>
+<option value="1561">Relatório do Projeto Integrado de Educação Patrimonial (Arqueologia)</option>
+<option value="1562">Relatório do Projeto Integrado de Educação Patrimonial (Imaterial)</option>
+<option value="1563">Relatório do Projeto Integrado de Educação Patrimonial (Material)</option>
+<option value="1194">Relatório Financeiro de Conclusão do TED - SECULT</option>
+<option value="1083">Relatório Preliminar</option>
+<option value="1589">Relatório Téc Análise Finan Prestação Contas Final</option>
+<option value="1584">Relatório Técnico de Monitoramento e Avaliação</option>
+<option value="172">Release</option>
+<option value="1133">Renúncia de Procuração Eletrônica</option>
+<option value="173">Representação</option>
+<option value="64">Requerimento</option>
+<option value="880">Requerimento - Abono Permanência</option>
+<option value="1048">Requerimento - Acesso ao SIAPENET</option>
+<option value="848">Requerimento - Ajuda de Custo</option>
+<option value="877">Requerimento - Aposentadoria</option>
+<option value="853">Requerimento - Auxílio Moradia</option>
+<option value="1033">Requerimento - Auxílio Pré-Escolar</option>
+<option value="1058">Requerimento Auxílio Caráter Indenizatório</option>
+<option value="1219">Requerimento Inscrição - Licença para Capacitação</option>
+<option value="1426">Requerimento Participação em Curso de Formação</option>
+<option value="65">Requisição</option>
+<option value="1399">Requisição de Material - Iphan PR</option>
+<option value="1269">Requisição de uso</option>
+<option value="1378">Requisição de Uso-Auditório Casa Sete Candeeiros</option>
+<option value="1379">Requisição de Uso-Veículo Iphan-BA</option>
+<option value="1395">Requisição de Veículo</option>
+<option value="1">Resolução</option>
+<option value="1183">Resposta pedido de impugnação</option>
+<option value="1450">Restabelecimento de Procuração Eletrônica</option>
+<option value="1135">Restabelecimento de Vinculação a Pessoa Jurídica</option>
+<option value="76">Resultado</option>
+<option value="174">Resumo</option>
+<option value="1132">Revogação de Procuração Eletrônica</option>
+<option value="89">RG</option>
+<option value="175">Roteiro</option>
+<option value="176">Sentença</option>
+<option value="177">Sinopse</option>
+<option value="178">Solicitação</option>
+<option value="1298">Solicitação de Abertura - Tombamento dos Quilombo</option>
+<option value="1564">Solicitação de alteração de ADA/AID, projeto e anexos</option>
+<option value="1565">Solicitação de anuência de licença ambiental</option>
+<option value="1574">Solicitação de Atuação do Escritório de Processos DIVMEP</option>
+<option value="953">Solicitação de Auditoria</option>
+<option value="972">Solicitação de Desanexação de Processo</option>
+<option value="254">Solicitação de Despesas por Suprimento de Fundos</option>
+<option value="1566">Solicitação de encerramento de Portaria Autorizativa</option>
+<option value="1567">Solicitação de encerramento de Processo</option>
+<option value="1409">Solicitação de Equipamentos de TI</option>
+<option value="1575">Solicitação de Monitoramento/Acompanhamento DIVMEP</option>
+<option value="1053">Solicitação de Prorrogação - Pós-Graduação</option>
+<option value="1568">Solicitação de Prorrogação de Prazo</option>
+<option value="827">Solicitação de Realização de Evento - SRE</option>
+<option value="1027">Solicitação de Veículo Oficial</option>
+<option value="1332">Solicitação e Autorização de Nota de Empenho</option>
+<option value="989">Solicitação Inscrição Capacit. Língua Estrangeira</option>
+<option value="990">Solicitação Inscrição Língua Estrangeira (CODEP)</option>
+<option value="842">Solicitação Interna de Serviços</option>
+<option value="268">Sumário</option>
+<option value="2">Súmula</option>
+<option value="1449">Suspensão de Procuração Eletrônica</option>
+<option value="1134">Suspensão de Vinculação a Pessoa Jurídica</option>
+<option value="179">Tabela</option>
+<option value="1059">Tabela Valores Mensais Contratação Plano</option>
+<option value="180">Telegrama</option>
+<option value="90">Termo</option>
+<option value="1464">Termo Aceite Solicitação Remoção Conc Int TASCIR</option>
+<option value="242">Termo Aditivo</option>
+<option value="1257">Termo Aditivo Prazo TC - Portaria Iphan 187/2010</option>
+<option value="1590">Termo Aditivo Redução de Jornada Reembolso Creche</option>
+<option value="1176">Termo Cadastro de Veículo (Prestador de Serviço)</option>
+<option value="1175">Termo Cadastro de Veículo (Servidor)</option>
+<option value="1123">Termo Circunstanciado Administrativo - TCA</option>
+<option value="993">Termo Comprom. Respon. Capacit. Língua Estrangeir</option>
+<option value="1445">Termo Compromisso Exercício da Atividade AUDIN</option>
+<option value="1371">Termo Convênio REG. SIMPL. - COM obras/serv. eng</option>
+<option value="1373">Termo Convênio REG. SIMPL. - SEM obras/serv. eng</option>
+<option value="996">Termo de Abertura de Processo de Tombamento</option>
+<option value="946">Termo de Abertura de Processo Eletrônico</option>
+<option value="239">Termo de Abertura de Projeto (TAP)</option>
+<option value="1261">Termo de Abertura do Projeto</option>
+<option value="1265">Termo de Adesão - Acordo de Cooperação Técnica</option>
+<option value="1109">Termo de Adesão de Serviço Voluntário</option>
+<option value="1075">Termo de Adjudicação</option>
+<option value="1013">Termo de Ajustamento de Conduta TAC</option>
+<option value="1502">Termo de Anuência da Chefia para participação em Capacitação</option>
+<option value="1137">Termo de Anulação</option>
+<option value="1251">Termo de Anulação de Licitação</option>
+<option value="244">Termo de Apostilamento</option>
+<option value="1312">Termo de Apostilamento - Dispensa de TED</option>
+<option value="1306">Termo de Apostilamento - TED</option>
+<option value="962">Termo de Assinatura Eletrônica</option>
+<option value="1082">Termo de Autorização</option>
+<option value="1152">Termo de Autorização de Tratamento de Dados</option>
+<option value="1264">Termo de Averbação de Revalidação do Registro</option>
+<option value="944">Termo de Cancelamento de Documento</option>
+<option value="1147">Termo de Cessão de Direitos Autorais</option>
+<option value="1024">Termo de Cessão Provisória</option>
+<option value="1429">Termo de Ciência de Avaliação do PTI</option>
+<option value="225">Termo de Ciência de Manutenção de Sigilo</option>
+<option value="1201">Termo de ciência para troca de senhas - SIAFI</option>
+<option value="945">Termo de Classificação Sigilosa</option>
+<option value="1025">Termo de Colaboração</option>
+<option value="1249">Termo de Compartilhamento</option>
+<option value="224">Termo de Comprom. Manutenção de Sigilo em Contrato</option>
+<option value="1067">Termo de Compromisso</option>
+<option value="992">Termo de Compromisso - Eventos de Capacitação</option>
+<option value="1428">Termo de Compromisso - Obras</option>
+<option value="986">Termo de Compromisso - Portaria 187/2010</option>
+<option value="1581">Termo de Compromisso - Reg. Simpl. Projetos</option>
+<option value="1412">Termo de Compromisso - Regime Simplificado</option>
+<option value="1192">Termo de Compromisso de Conservação e Preservação</option>
+<option value="1569">Termo de Compromisso do Arqueólogo Coordenador (TCA)</option>
+<option value="1570">Termo de Compromisso do Empreendedor (TCE) referente aos Bens Arqueológicos</option>
+<option value="1571">Termo de Compromisso do Empreendedor (TCE) referente aos Bens Registrados</option>
+<option value="930">Termo de Compromisso e Responsabilidade</option>
+<option value="902">Termo de Compromisso para Uso do INRC</option>
+<option value="1288">Termo de Confidencialidade</option>
+<option value="1377">Termo de Confidencialidade - Comissão de Ética</option>
+<option value="1381">Termo de Confidencialidade e Sigilo - CPS</option>
+<option value="1410">Termo de Continuidade - Dispensa de TED</option>
+<option value="1453">Termo de Convalidação de TED</option>
+<option value="1335">Termo de Convênio - COM obras e serviços de eng</option>
+<option value="1337">Termo de Convênio - SEM obras e serviços de eng.</option>
+<option value="1461">Termo de Cooperação Cultural</option>
+<option value="975">Termo de Desfazimento</option>
+<option value="1174">Termo de Devolução</option>
+<option value="1432">Termo de Devolução de Broche</option>
+<option value="961">Termo de Doação</option>
+<option value="963">Termo de Doação de Publicações</option>
+<option value="1098">Termo de Efetivo Exercício</option>
+<option value="1211">Termo de Eliminação de Documentos</option>
+<option value="1116">Termo de Embargo - Portaria 187/2010</option>
+<option value="1050">Termo de Empréstimo</option>
+<option value="1258">Termo de Encerramento</option>
+<option value="228">Termo de Encerramento de Contrato</option>
+<option value="1477">Termo de Execução Cultural</option>
+<option value="1212">Termo de execução descentralizada - TED</option>
+<option value="1206">Termo de Extinção</option>
+<option value="1357">Termo de Fomento</option>
+<option value="950">Termo de Garantia</option>
+<option value="942">Termo de Guarda de Mídia</option>
+<option value="1074">Termo de Homologação</option>
+<option value="1091">Termo de Homologação - Patrimônio Ferroviário</option>
+<option value="1008">Termo de Inutilização de Bens</option>
+<option value="1007">Termo de Justificativa de Abandono</option>
+<option value="1295">Termo de Justificativas Técnicas Relevantes - AGU</option>
+<option value="1302">Termo de Oitiva - Comissão de Ética</option>
+<option value="873">Termo de Opção - DAS</option>
+<option value="826">Termo de Opção de Plano</option>
+<option value="874">Termo de Posse</option>
+<option value="1479">Termo de Premiação Cultural</option>
+<option value="1028">Termo de Prorrogação de Convênio</option>
+<option value="1279">Termo de Quitação - Termo Ajustamento Conduta</option>
+<option value="1284">Termo de Recebimento - Equipamento(s) Informática</option>
+<option value="1366">Termo de Recebimento Crachá Mestrado Profissional</option>
+<option value="227">Termo de Recebimento Definitivo</option>
+<option value="1579">Termo de Recebimento Depósito de Bem Arqueológico</option>
+<option value="1365">Termo de Recebimento do Broche</option>
+<option value="226">Termo de Recebimento Provisório</option>
+<option value="1022">Termo de Reconhecimento de Dívida</option>
+<option value="214">Termo de Referência</option>
+<option value="1572">Termo de Referência Específico (TRE)</option>
+<option value="1481">Termo de Referência Específico IN 06/2025</option>
+<option value="1242">Termo de Rejeição Parcial</option>
+<option value="1592">Termo de Rescisão</option>
+<option value="245">Termo de Rescisão Amigável</option>
+<option value="247">Termo de Rescisão Unilateral</option>
+<option value="959">Termo de Responsabilidade - bem permanente</option>
+<option value="957">Termo de Responsabilidade - uso de espaço físico</option>
+<option value="1297">Termo de Responsabilidade - Utilização de Veículo</option>
+<option value="1193">Termo de ressarcimento</option>
+<option value="1006">Termo de Retificação</option>
+<option value="995">Termo de Transferência de Bem Permanente</option>
+<option value="1180">Termo de Vistoria de Bens</option>
+<option value="1465">Termo Desistência Vaga Concurso Remoção</option>
+<option value="1367">Termo Recebimento Crachá de Fiscalização</option>
+<option value="1369">Termo Recebimento Crachá Estagiário</option>
+<option value="1368">Termo Recebimento Crachá Identificação Servidores</option>
+<option value="1434">Termo Recebimento Definitivo Port 224/2025</option>
+<option value="1416">Termo Responsabilidade Acesso SCDP Anexo III</option>
+<option value="1246">Termo Responsabilidade Compatibilidade Atividades</option>
+<option value="1069">Termo Responsabilidade Guarda e Uso de Equipamento</option>
+<option value="958">Termo Responsabilidade Recebimento de Celular</option>
+<option value="1026">Termo Suspensão Temporária Execução Contrato</option>
+<option value="1458">Termo de Confidencialidade e Sigilo de Informações</option>
+<option value="181">Tese</option>
+<option value="182">Testamento</option>
+<option value="183">Título</option>
+<option value="1573">Troca de Titularidade do Empreendimento</option>
+<option value="1613">Tutorial</option>
+<option value="53">Vídeo</option>
+<option value="1130">Vinculação de Responsável Legal a Pessoa Jurídica</option>
+<option value="71">Volume de Processo</option>
+<option value="274">Voucher</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+<label id="lblData" class="infraLabelOpcional">Data entre:</label>
+</div>
+<div class="col-sm-12 col-md-8 col-lg-9 col-xl-9">
+<div class="row">
+<div class="col-6 col-lg-4 col-xl-5">
+<div class="input-group mb-3 data">
+<input type="text" id="txtDataInicio" name="txtDataInicio" onkeypress="return infraMascaraData(this, event)" class="infraText" value="" tabindex="511"/>
+<img id="imgDataInicio" src="/infra_css/svg/calendario.svg" onclick="infraCalendario('txtDataInicio',this);" alt="Selecionar Data Inicial" title="Selecionar Data Inicial" class="infraImgModulo" tabindex="512"/>
+<label id="lblDataE" for="txtDataE" accesskey="" class="infraLabelOpcional">&nbsp;e&nbsp;</label>
+</div>
+</div>
+<div class="col-6 col-lg-4 col-xl-5">
+<div class="input-group mb-3 data">
+<input type="text" id="txtDataFim" name="txtDataFim" onkeypress="return infraMascaraData(this, event)" class="infraText" value="" tabindex="513"/>
+<img id="imgDataFim" src="/infra_css/svg/calendario.svg" onclick="infraCalendario('txtDataFim',this);" alt="Selecionar Data Final" title="Selecionar Data Final" class="infraImgModulo" tabindex="514"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+<div id="divInfraCaptcha" class="infraAreaDados" style="height:5em;">
+<div style="float:left;">
+<label id="lblInfraCaptcha" for="txtInfraCaptcha" class="infraLabelObrigatorio">
+<img id="imgCaptcha" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAIAAAB6RmagAAAACXBIWXMAAC4jAAAuIwF4pT92AAAL+0lEQVR4nNVcb0Rk3xs/XSOZHRkrbZIkyUiSkZGRrLWSlmSMlYyVZI2sJCtJkrRJVpKVJL0YayUrSbt60YtkJLMZYyVtsrKSzGY2qx2zbdzfi/PbZ0/3nnvuuefemfp+Xs2c+5zn33nuc57n3JmbJcsyQigrKwv9BR75bwHrT9U8KysrMxYZEpQxrczoICm+37rGGFlZWWS8opvhq7iEEJJlWaE5psnkGhgSJKwV2IVofmDP4tQBnK8MDkMi2azF2GrlAHIEPjN4Yhpylq4CYoYLu8voRPAMRDx/hKkpGfce3GlZpKNN3mTAQZeVJTc02CMgS1iBdKSiNPFEovnp3zrqzr8td1hCoyC4Czv9rYPhBMUlCTEzDOLL4emAulLWouEnYNCb3L8tQWY4M5yguCSph8xvLobG2RBYTh5B1JKWkwmPf2C6oULHqqymax0nbhSkJm9T4KBbG+uy+vLly6dPn9g0WsvJo6fRlGMUMD0DtRdDugDIfuLGtmJeUa0ewVAL8+rVK5fL5fF4DCUbrUMOBhNr0ziPgVpbtuVyhfGvVbmDBdqvX7/y8/OTySSMqDNExnTml5WZBi3DoJxzCMDCI4TNzU1FZCiOv3RbdkOa8O+kf/78YXCzNjIEyilG3hIrwhBCNt1pPNBtjfhdE4lE4PPU1BQ5V3Ho+ePHj729verqal3m379/j0QisVjs5OQkGAx++PDhyZMnmA9/YpAkKT8/3+/3NzU11dfX37t3j9MiZHz70KLnbzTIQfEiTE4DzDD3+XwwfXNzU80TY2xszG63I4SKiop+/vxJckilUuFweGFhYWhoyOfzlZSUKOZKknR6empIq6KiIpJDdnb2w4cPGWamybE8sFC0YUZU2RsbG3V1dW63e2dnR2A6iYqKCnD6+fm5Yi4V0WgUaF6/fo2DhgGbzRaPx7ktlvf39yVJc/91OBx1dXWLi4v8DMVAus7y4KNGOV2GIdnfvn0DT3k8HiofToZXV1fZ2dmYVVFRkXouY8llWU4kEoxVhLWcnJxUq4SIJKyA3+/Hc/Py8rq6usrLy9VsXS4Xj4FU/gznaF2iriUPB0MKGAtAKpeRkRHqUslMj1MZ7u3tAYempiYF5fHxMXvhBaBr8s7ODhC/efMGD2JN2tra8HbjdDrfvXuny0rX/LsGC5QjNwKtBUB8KTEUCsGswcFB8tLR0VFxcTFcLSkpOTg4uGFJBkHKxb2VeTcaha5QYa0QcW+bMiwWi1F9p+XWVCoVjUZxCal2dG9vL1AuLy+TUgoKCuCSy+U6OTnhUQ8C1+v1UgnMhgkNDH0YBOyJutjY2Hj58iXmHwgE5ufnd3d3V1ZWksmkriykkeD17WEjGAwqXJOXl0eXweHER48ewdWvX7/iwXA47HQ6YdztdvOXk1Af1NfXGzUtlUqpOx2TwWE5EEIzMzMMPdvb2zn5qL8qjUF6VQKJi4sLh8OBlbh//z4opNWzvH37lu3QvLw8/NXpdOKR9fV1svuoq6sz5H3w2uPHjxlkVJ7Ly8ukhoWFhV6vt7y83Gb7dzjU1dXFrwyJVCp1dXWlJVpXN7jkcrmYgYp8Pp+CFacD/62KIY8D8eTkJCixsrICjUZvby91YktLCyYg9wgqcNeztLQEPBFCjY2N1CTJ0BMEtbS06JqjcMLx8XFZWZndbm9tbY1EIjB+dnbm9XrBEF22aoTD4ZycnJycnNbW1q2tLX6LAFdXVy9fviRbs+zs7Obm5tHR0f7+/sLCQhjHrZkYTOXA0tJSrAE+pmxsbMRfi4uL/8+dcFAikcjJycEE6lzHjhWEkN/vx7eapiW0xcjNzcXTA4GAGUu1tLXZbGwFqOjr61NYNzg4qKiv1RLh8/n5OXkEJ0lSMBgki7Dx8XF8KScnR/e4j6E2Jc9wGknaFgqFFCPb29sKetAY3Tz6BMzOzrLjw5BhGLAFvHjxgscoHp6yLA8ODmK2ZWVlnGwBiUQiPz+faqDH45menj47O2NMj8fjlZWVMKWiooLMahhHR0elpaV5eXl4XYRhbDchFwmCt7CwEN/TiUQCdoFgMEjOvb6+huk4zaiZQ7HNAy0Nya/kA7yRkRF+S3d3d30+3/Pnzy8uLtRXk8kkNNU9PT1sHdQIBAKgldvtVp/aSZJUU1MTi8XUc6+urmpra0niy8tLHovUWunqKTOCgz05Go2CfqOjozDe1NSEB3E+J7npLi0cRJIYHh7WYsLmJstyPB4Hmrm5OYY5CkADrM4319fXz549w1dtNtv+/j4PQ1Dy/fv3oBI+5Ts5OZmYmKiqqlIYNTY2puZD7kdatTDVIRYHBxuwkHa7nXwCsri4qF42hJDH42GsJR4kaRBCkiRNTU3RldYGSXZ4eAjja2traolagOJJkqS+vr7Dw0NZlpPJ5NraGqlkX18fl7MIodCOORyOvb09soqKxWIDAwNVVVVOp7OhoUHxXEmW5ePjY0jM7ObLkEqsq2xSxRrjD+SDKMX2gYietqqqCg9ubW2BQ+fn57Vkkc16dnY2/36pFSjk0392uadAJBIhuySEENm+Yvj9/uvra36eMhFzAEmS3G43QgjHHxtDQ0MwkYfePEQyR1tbm8Lp5Ep3d3fD1dXVVZnoYKE6oYIkQze3JOpnwO7uLu6DoBuigm2UQsrKygqDFTXnszE3N8dgaLPZoCrSUhVOCCsqKoxKp0LfJ5x0gP39fS2n48+Hh4eQV2pqag4ODuDrxMQEg/Pl5eXMzMzc3Jzi9xlUk0i5w8PDoAx5/iYWJTD34uJienoaIVRQUGCz2cizOB4OCnR0dJA6OJ1OaLMB7MKopqYGk5WUlAgoIADDdpJpQ8tNzc3NQAClltPpZK+6GHDMgbiioqKlpaVUKiXLcmtrKx7s7OzUChRDK20mOE5PT7u7uzs7OxcWFqBZPTo6Gh8fhy2M/dz/6dOnoMDs7KxM3CdnZ2f4V3MIIaO/Y2IYxSoyqICKTFFtkNje3lavQX9/v1oWtwkUwPTPnz8rGkKHw1FcXAyDHz9+RDcznHCUWEuGKbu6urACkiQx6hjFTuf1ent7e3t6eurr68mSCB9b80tnXeXkAohGo21tbSMjI+zzSvIRGvpbDRiVxb8SAwMDWkteWVnJnssZKMKDq6uroVCIPPhXEMDDy9zcXDZzdUmrAN77GPayoZir83xZS0tdhMNhXXdzgj9E1Lt4bm4u/hEhupk5tDhwBoqCmKHV6OgopmloaKASXFxcQH9HPiSj4vLykjxDI+F0OnGQac0VWALLni+rZbe3t2O9XS6X4oEZv6LI4FPi6enp5ubm6urq2traYDB4dHQkFpc8gUIOagUf2bupf2d6eXnZ0NAABOFwmEc3/Hu5QCDQ0tKCS8CNjQ12ImdbqnlJjCMPrq+vQ6EQfqSi0ENswYShe3/zTGeAMZc8a5Ekye/3Ly4uxmKx7e3t8fFx8rdtHR0dark8ugnbpc88HeKt1ViYm7U5FiYaDRGeZ0a4mBBTKX24cwopoOV6qisN+RfBj51E8wp/lMzOzsLBuQJ2u314eNjoYatVQKrdkByx8q031sKq9whoMZdv/tGSzR/oSRryq9ZfDoHg9+/fKysr6+vr0Wg0Ho/b7fbS0tKmpqa2trYHDx6w5SJLF0WhNsvqW4kDqpfZ/4Ol6inmMuqiMvjz/0laEXNivrX85hR/x9VdSBJsGHq9lZl3YaUbaUrJ6cguGP8OFvn/kZ0xwErz26xLLGCgSZ+QiSQd7gV72duiAOf0xnLmkWHRd6Q+Y4BTQyqZlNZYZqhiuVAB0brv4tHVU127CJumeAlR1l/wK8PWUICM962DbAKjO714iZTxO/VWckM63g4FnPm5af4nXZcFSWB0mxe21lD8UUVTybS+IlpuYNOzxznB9q0Z5lpNGZWYu+Xla+r+K7DQHDNMTM7FH9LUqiAycygOHtDNgCJP0NT6qWHmPjN0O5rZiS3xJmcPQqXh9ycQqGsRKitLYNnbn3kSDycf/CHzTYchJQ3Valr0PBIZZ6/ms4XOqiHjy6DmyH8iq56insvpMv562QxuayflyTRibPnTgdnjZ10xZvrsdMB8VBkyXxgCGZR90wpM/x/KzbCpic/45AAAAABJRU5ErkJggg==" title="Informe o código de confirmação" /></label>
+</div>
+<div style="width:28px;float:left;">
+<img id="infraImgRecarregarCaptcha" title="Regerar as letras do código de confirmação" onclick="infraGerarNovoCaptcha('/infra_gerar_captcha.php?r=s&c=c0200bbef4075d88d30cbdaadfde6c88ddc82a457dffc6bf88e9570d05fa28fb&i=PESQUISA_PUBLICA1789519440470');" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXJlbG9hZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0yIDEyQzIgMTYuOTcgNi4wMyAyMSAxMSAyMUMxMy4zOSAyMSAxNS42OCAyMC4wNiAxNy40IDE4LjRMMTUuOSAxNi45QzE0LjYzIDE4LjI1IDEyLjg2IDE5IDExIDE5QzQuNzYgMTkgMS42NCAxMS40NiA2LjA1IDcuMDVDMTAuNDYgMi42NCAxOCA1Ljc3IDE4IDEySDE1TDE5IDE2SDE5LjFMMjMgMTJIMjBDMjAgNy4wMyAxNS45NyAzIDExIDNDNi4wMyAzIDIgNy4wMyAyIDEyWiIgLz48L3N2Zz4=" tabindex="515"/>
+<audio id="infraAudioCaptchaMedia"><source id="infraSrcAudioCaptcha" src="/infra_js/infra_gerar_audio_captcha.php?v=5&i=PESQUISA_PUBLICA1789519440470"></audio>
+<img id="infraImgAudioCaptcha" title="Ouvir a narração das letras do código de confirmação" onclick="infraGerarAudioCaptcha('infraAudioCaptchaMedia', 'infraSrcAudioCaptcha', '5', 'PESQUISA_PUBLICA1789519440470')" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXZvbHVtZS1oaWdoIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE0LDMuMjNWNS4yOUMxNi44OSw2LjE1IDE5LDguODMgMTksMTJDMTksMTUuMTcgMTYuODksMTcuODQgMTQsMTguN1YyMC43N0MxOCwxOS44NiAyMSwxNi4yOCAyMSwxMkMyMSw3LjcyIDE4LDQuMTQgMTQsMy4yM00xNi41LDEyQzE2LjUsMTAuMjMgMTUuNSw4LjcxIDE0LDcuOTdWMTZDMTUuNSwxNS4yOSAxNi41LDEzLjc2IDE2LjUsMTJNMyw5VjE1SDdMMTIsMjBWNEw3LDlIM1oiIC8+PC9zdmc+" tabindex="515"/>
+
+</div>
+<div style="float:left;">
+<input type="text" id="txtInfraCaptcha" name="txtInfraCaptcha" class="infraText" value="" maxlength="6" tabindex="515"/>
+<input type="hidden" id="hdnInfraCaptcha" name="hdnInfraCaptcha" value="0" />
+</div>
+</div> <div class="row">
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mt-4 mt-sm-4 mt-xl-0 mt-lg-0 mt-md-0">
+<input type="submit" id="sbmPesquisar" name="sbmPesquisar" value="Pesquisar" class="infraButton"/>
+<input type="reset" id="sbmLimpar" name="sbmLimpar" value="Limpar" class="infraButton"/>
+</div>
+</div>
+</div>
+</div>
+<input type="hidden" id="txtNumeroDocumentoPesquisa" name="txtNumeroDocumentoPesquisa" class="infraText" value="" tabindex="516"/>
+<input type="hidden" id="txtAssinante" name="txtAssinante" class="infraText" value="" tabindex="517"/>
+<input type="hidden" id="hdnIdAssinante" name="hdnIdAssinante" class="infraText" value=""/>
+<input type="hidden" id="txtDescricaoPesquisa" name="txtDescricaoPesquisa" class="infraText" value="" tabindex="518"/>
+<input type="hidden" id="txtAssunto" name="txtAssunto" class="infraText" tabindex="519" value=""/>
+<input type="hidden" id="hdnIdAssunto" name="hdnIdAssunto" class="infraText" value=""/>
+<input type="hidden" id="txtSiglaUsuario1" name="txtSiglaUsuario1" onfocus="sugerirUsuario(this);" class="infraText" value="" tabindex="520"/>
+<input type="hidden" id="txtSiglaUsuario2" name="txtSiglaUsuario2" class="infraText" value="" tabindex="521"/>
+<input type="hidden" id="txtSiglaUsuario3" name="txtSiglaUsuario3" class="infraText" value="" tabindex="522"/>
+<input type="hidden" id="txtSiglaUsuario4" name="txtSiglaUsuario4" class="infraText" value="" tabindex="523"/>
+<input type="hidden" id="hdnSiglasUsuarios" name="hdnSiglasUsuarios" class="infraText" value=""/>
+<input type="hidden" id="hdnSiglasUsuarios" name="hdnSiglasUsuarios" class="infraText" value=""/>
+<input type="hidden" id="hdnCId" name="hdnCId" class="infraText" value="PESQUISA_PUBLICA1789519440470"/>
+<input id="partialfields" name="partialfields" type="hidden" value=""/>
+<input id="requiredfields" name="requiredfields" type="hidden" value=""/>
+<input id="as_q" name="as_q" type="hidden" value=""/>
+<input type="hidden" id="hdnFlagPesquisa" name="hdnFlagPesquisa" value="1"/>
+</form>
+
+<div id="conteudo" class="retorno-ajax" style="width:99%;">
+<table border="0" class="pesquisaResultado">
+<tbody></tbody>
+</table>
+<div class="ajax-loading" style="position: absolute; width: 97%; background: #F8F8F8; padding: 7px 10px 4px; text-align: center; display: none;">
+<div class="d-flex justify-content-center align-items-center">
+<img src="../../../infra_css/svg/aguarde.svg" alt="" style="d-inline-block">
+<span>Pesquisando...</span>
+</div>
+</div>
+<div class="total-registros-infinite"></div>
+</div>
+</div>
+</div>
+</div>
+<input type="hidden" id="hdnInfraPrefixoCookie" name="hdnInfraPrefixoCookie" value="IPHAN_SEI_"/>
+<div id="infraDivImpressao" class="infraImpressao"></div>
+<div id="infraBs-xs" class="d-none d-xs-block"></div>
+<div id="infraBs-sm" class="d-none d-sm-block"></div>
+<div id="infraBs-md" class="d-none d-md-block"></div>
+<div id="infraBs-lg" class="d-none d-lg-block"></div>
+</body>
+</html>

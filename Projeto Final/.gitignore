@@ -1,0 +1,18 @@
+﻿# Dados brutos e processados (não versionar dados sensíveis)
+data/raw/
+data/processed/
+data/models/
+output/
+
+# Manter estrutura de diretórios
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/models/.gitkeep
+!data/ground_truth/.gitkeep
+!output/.gitkeep
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj

@@ -1,0 +1,22 @@
+{
+  "descricao": "Configuracao da extracao de conteudo de documentos do SEI. Define quais tipos de documento sao considerados nativos (gerados dentro do SEI, em HTML) e devem ter o conteudo textual extraido. Anexos (Word, planilha, geoespacial, PDF) sao listados mas nao tem texto extraido nesta etapa.",
+  "tipos_nativos_extrair": [
+    "Despacho",
+    "Oficio",
+    "Ofício",
+    "Parecer"
+  ],
+  "observacao_semantica": "A semantica processual (Oficio gera pendencia; Despacho da CGM informa/da entrada na demanda; Parecer avalia) e responsabilidade da etapa de Classificacao, nao desta etapa de extracao.",
+  "content_type_nativo": "text/html",
+  "content_types_anexo_conhecidos": [
+    "application/octet-stream",
+    "application/pdf",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "application/vnd.ms-excel",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "application/zip",
+    "application/vnd.google-earth.kml+xml",
+    "application/vnd.google-earth.kmz"
+  ]
+}

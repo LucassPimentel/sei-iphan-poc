@@ -1,0 +1,48 @@
+[scrape] Iniciando para URL: https://sei.iphan.gov.br/sei/modulos/pesquisa/md_pesq_processo_exibir.php?iI3OtHvPArITY997V09rhsSkbDKbaYSycOHqqF2xsM0IaDkkEyJpus7kCPb435VNEAb16AAxmJKUdrsNWVIqQw02_CutLpMKF6Yxd-0vMVC_Qpr7vnJcx6Gys6LheGMm 
+[scrape] HTTP status: 200 
+[scrape] HTML bruto salvo em: data/raw/01450_001620_2026_78_20260918.html 
+[scrape] Processo: 01450.001620/2026-78 | Tipo: LICENCIAMENTO AMBIENTAL - IN n° 006/2025 
+[scrape] Documentos encontrados: 33 | Públicos: 32 | Restritos: 1 
+[scrape] Andamentos encontrados: 47 
+[scrape] Dados persistidos em: data/processed/01450_001620_2026_78_20260918.json 
+
+========== RESULTADO ==========
+Processo         : 01450.001620/2026-78 
+Tipo             : LICENCIAMENTO AMBIENTAL - IN n° 006/2025 
+Data de geracao  : 05/02/2026 
+Processo restrito: FALSE 
+Documentos       : 33 | Publicos: 32 | Restritos: 1 
+Andamentos       : 47 
+HTML salvo em    : data/raw/01450_001620_2026_78_20260918.html 
+
+--- DOCUMENTOS ---
+# A tibble: 33 × 5
+   numero_documento tipo                     data_documento unidade_sigla acesso
+   <chr>            <chr>                    <chr>          <chr>         <chr> 
+ 1 7117316          Anotação de Responsabil… 05/02/2026     SAIP          publi…
+ 2 7117317          Arquivo ADA              05/02/2026     SAIP          publi…
+ 3 7117318          Arquivo AID              05/02/2026     SAIP          publi…
+ 4 7117319          Anexo                    05/02/2026     SAIP          publi…
+ 5 7117320          Ficha de Caracterização… 05/02/2026     SAIP          publi…
+ 6 7117321          Termo                    05/02/2026     SAIP          publi…
+ 7 7117322          Termo                    05/02/2026     SAIP          publi…
+ 8 7119470          Despacho 1619            05/02/2026     CGM           publi…
+ 9 7121628          Despacho 360             06/02/2026     COTEC ARQUEO… publi…
+10 7184851          Parecer FCA Arq - IN 06… 03/03/2026     COTEC ARQUEO… publi…
+# ℹ 23 more rows
+
+--- ANDAMENTOS ---
+# A tibble: 47 × 4
+   data_hora        unidade_sigla descricao                           status   
+   <chr>            <chr>         <chr>                               <chr>    
+ 1 14/09/2026 08:13 PGLic-SP      Processo recebido na unidade        aberto   
+ 2 14/09/2026 00:22 PGLic-SP      Processo remetido pela unidade CGM  concluido
+ 3 14/09/2026 00:15 CGM           Processo recebido na unidade        concluido
+ 4 10/09/2026 16:15 CGM           Processo remetido pela unidade CNA  concluido
+ 5 09/09/2026 09:19 CNA           Processo recebido na unidade        concluido
+ 6 09/09/2026 08:22 CNA           Processo remetido pela unidade COIR concluido
+ 7 03/09/2026 12:55 IPHAN-SP      Conclusão do processo na unidade    concluido
+ 8 02/09/2026 16:22 COIR          Processo recebido na unidade        concluido
+ 9 02/09/2026 16:02 COIR          Processo remetido pela unidade CNA  concluido
+10 02/09/2026 15:59 CNA           Processo recebido na unidade        concluido
+# ℹ 37 more rows

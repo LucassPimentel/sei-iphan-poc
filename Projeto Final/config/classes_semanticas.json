@@ -1,0 +1,124 @@
+{
+  "descricao": "Dicionario de classificacao semantica de atos/documentos (baseline por regras). Cada classe possui termos-gatilho com pesos, observados nos textos reais dos processos. O baseline pontua cada classe pela ocorrencia dos gatilhos (com pesos) e escolhe a de maior escore. E editavel e auditavel — nao hardcoded no codigo. Serve tambem para gerar a pre-classificacao que acelera a rotulagem do gabarito. Referencia normativa: IN IPHAN 06/2025.",
+  "versao": "1.1",
+  "observacao_metodologica": "Este e o BASELINE por dicionario (Passo 2). O modelo supervisionado (Passo 4) sera comparado a ele. Termos derivados de inspecao dos documentos dos processos 01450.001620/2026-78 e 01450.002827/2026-60. v1.1: gatilhos enriquecidos com vocabulario e criterios de FLUXOS.md (especificacao do especialista sobre a IN 06/2025), validados por contagem nos textos reais. Ajustar conforme novos casos, registrando a alteracao.",
+  "notas_de_dominio": {
+    "portaria_vs_conclusiva": "A portaria publicada no DOU (art. 51, §1º) NAO equivale a manifestacao conclusiva para licenca ambiental (art. 58): sao eventos distintos e nao devem ser confundidos. Ambos, porem, sao atos de 'decisao' no baseline.",
+    "despacho_triagem_cgm": "O despacho da CGM (unidade de triagem) abre a demanda declarando no assunto qual instrumento sera analisado (FCA, PAIPA, PAPIPA, RAIPA...). E tratado como 'encaminhamento'/'solicitacao' conforme o verbo; a identificacao do INSTRUMENTO demandado e responsabilidade da etapa de normativas/grafo, nao da classe semantica.",
+    "complementacao_unica": "A solicitacao de complementacao deve ser feita uma unica vez (art. 51, §3º/52) e pode ser reiterada uma unica vez (art. 52, §2º). 'reiteracao' e sinal forte de exigencia_complementacao."
+  },
+  "peso_tipo_documento": {
+    "descricao": "Sinal auxiliar pelo tipo do documento (prefixo). Somado ao escore da classe indicada quando o tipo casa. Nao decide sozinho.",
+    "regras": [
+      { "prefixo_tipo": "Parecer", "classe": "manifestacao_parecer", "peso": 2 },
+      { "prefixo_tipo": "Oficio", "classe": "encaminhamento", "peso": 1 },
+      { "prefixo_tipo": "Ofício", "classe": "encaminhamento", "peso": 1 }
+    ]
+  },
+  "classes": [
+    {
+      "id": "solicitacao",
+      "rotulo": "Solicitação",
+      "descricao": "Documento que pede algo/providencias a alguem (analise, manifestacao, complementacao, cadastro).",
+      "gatilhos": [
+        { "termo": "solicito", "peso": 3 },
+        { "termo": "solicitamos", "peso": 3 },
+        { "termo": "solicita-se", "peso": 3 },
+        { "termo": "solicitacao", "peso": 1 },
+        { "termo": "requeiro", "peso": 2 },
+        { "termo": "requer-se", "peso": 2 },
+        { "termo": "peco", "peso": 1 },
+        { "termo": "favor de", "peso": 1 },
+        { "termo": "para providencias", "peso": 2 }
+      ]
+    },
+    {
+      "id": "encaminhamento",
+      "rotulo": "Encaminhamento",
+      "descricao": "Documento que encaminha/remete o processo ou documento adiante, para apreciacao ou fins especificos.",
+      "gatilhos": [
+        { "termo": "encaminho", "peso": 3 },
+        { "termo": "encaminhamos", "peso": 3 },
+        { "termo": "encaminha-se", "peso": 3 },
+        { "termo": "encaminhar", "peso": 1 },
+        { "termo": "remeto", "peso": 3 },
+        { "termo": "remetemos", "peso": 3 },
+        { "termo": "segue para apreciacao", "peso": 3 },
+        { "termo": "segue para", "peso": 2 },
+        { "termo": "para fins de", "peso": 1 },
+        { "termo": "para apreciacao", "peso": 2 },
+        { "termo": "para conhecimento", "peso": 1 }
+      ]
+    },
+    {
+      "id": "manifestacao_parecer",
+      "rotulo": "Manifestação / Parecer",
+      "descricao": "Analise tecnica de merito sobre o objeto do processo (pareceres FCA/PAPIPA/PAIPA/RAIPA, manifestacoes tecnicas por componente cultural).",
+      "gatilhos": [
+        { "termo": "manifestacao tecnica", "peso": 3 },
+        { "termo": "manifesto-me", "peso": 3 },
+        { "termo": "manifestamo-nos", "peso": 3 },
+        { "termo": "manifestou-se", "peso": 2 },
+        { "termo": "trata-se de", "peso": 1 },
+        { "termo": "opina-se", "peso": 3 },
+        { "termo": "parecer tecnico", "peso": 2 },
+        { "termo": "conclui-se", "peso": 2 },
+        { "termo": "analise tecnica", "peso": 1 },
+        { "termo": "ficha de caracterizacao", "peso": 1 },
+        { "termo": "patrimonio arqueologico", "peso": 1 },
+        { "termo": "patrimonio material", "peso": 1 },
+        { "termo": "patrimonio imaterial", "peso": 1 },
+        { "termo": "area diretamente afetada", "peso": 1 },
+        { "termo": "area de influencia", "peso": 1 }
+      ]
+    },
+    {
+      "id": "exigencia_complementacao",
+      "rotulo": "Exigência / Complementação",
+      "descricao": "Documento que aponta pendencia e exige documentos/correcoes/complementacao/esclarecimento para prosseguir (casa lilas no diagrama: cita o parecer e traz termos de complementacao/solicitacao/esclarecimento). Reiteracao e sinal forte (art. 52, §2º).",
+      "gatilhos": [
+        { "termo": "complementacao", "peso": 3 },
+        { "termo": "complementar", "peso": 2 },
+        { "termo": "complementacoes", "peso": 3 },
+        { "termo": "devera apresentar", "peso": 3 },
+        { "termo": "necessario apresentar", "peso": 2 },
+        { "termo": "sanar", "peso": 2 },
+        { "termo": "pendencia", "peso": 2 },
+        { "termo": "reiteramos", "peso": 3 },
+        { "termo": "reitera-se", "peso": 3 },
+        { "termo": "reiteracao", "peso": 2 },
+        { "termo": "esclarecimento", "peso": 2 },
+        { "termo": "esclarecimentos", "peso": 2 },
+        { "termo": "exige-se", "peso": 3 },
+        { "termo": "exigencia", "peso": 2 },
+        { "termo": "no prazo de", "peso": 1 }
+      ]
+    },
+    {
+      "id": "decisao",
+      "rotulo": "Decisão / Despacho ordinatório",
+      "descricao": "Documento que decide, aprova, defere/indefere, arquiva, informa resultado ou determina rumo do processo. Inclui a publicacao de portaria no DOU (art. 51, §1º) — que NAO se confunde com manifestacao conclusiva (art. 58).",
+      "gatilhos": [
+        { "termo": "defiro", "peso": 3 },
+        { "termo": "indefiro", "peso": 3 },
+        { "termo": "deferimento", "peso": 2 },
+        { "termo": "indeferimento", "peso": 2 },
+        { "termo": "aprovo", "peso": 3 },
+        { "termo": "aprovada", "peso": 2 },
+        { "termo": "aprovacao", "peso": 1 },
+        { "termo": "homologo", "peso": 3 },
+        { "termo": "decide-se", "peso": 3 },
+        { "termo": "informo que", "peso": 2 },
+        { "termo": "vimos informar", "peso": 2 },
+        { "termo": "torna-se publica", "peso": 2 },
+        { "termo": "publicada no diario oficial", "peso": 3 },
+        { "termo": "diario oficial da uniao", "peso": 2 },
+        { "termo": "portaria n", "peso": 1 },
+        { "termo": "encerra-se", "peso": 1 },
+        { "termo": "arquive-se", "peso": 3 },
+        { "termo": "arquivamento", "peso": 2 },
+        { "termo": "arquivado", "peso": 2 }
+      ]
+    }
+  ]
+}

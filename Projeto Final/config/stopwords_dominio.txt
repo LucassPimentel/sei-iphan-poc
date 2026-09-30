@@ -1,0 +1,56 @@
+# Stopwords de dominio — POC IPHAN
+# Termos frequentes nos documentos que NAO ajudam a discriminar tipo/semantica.
+# Um termo por linha. Linhas iniciadas por # sao comentarios.
+# Editavel: ajuste conforme a analise exploratoria.
+
+# Institucional / cabecalho recorrente
+ministerio
+cultura
+instituto
+patrimonio
+patrimônio
+historico
+histórico
+artistico
+artístico
+nacional
+iphan
+sei
+processo
+documento
+coordenacao
+coordenação
+tecnica
+técnica
+departamento
+superintendencia
+superintendência
+divisao
+divisão
+subdivisao
+subdivisão
+
+# Termos de tramitacao genericos
+encaminho
+encaminhamos
+prezado
+prezada
+prezados
+senhor
+senhora
+assunto
+referencia
+referência
+atenciosamente
+respeitosamente
+cordialmente
+
+# Boilerplate residual de assinatura (caso escape do corte)
+assinado
+eletronicamente
+autenticidade
+verificador
+crc
+decreto
+codigo
+código

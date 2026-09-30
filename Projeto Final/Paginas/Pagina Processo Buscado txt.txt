@@ -1,0 +1,566 @@
+Quebra de linha
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-br" >
+<head >
+
+<link rel="shortcut icon" sizes="any" href="favicon/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+<link rel="manifest" href="favicon/site.webmanifest" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<meta name="robots" content="noindex"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>:: Sistema Eletrônico de Informações - Pesquisa Processual ::</title>
+<link href="/infra_css/infra-tooltip.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/infra-barra-progresso.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/infra-impressao-global.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="print"/>
+<link href="/infra_css/infra-ajax.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/calendario/v2/infra-calendario.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/arvore/infra-arvore.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/mapa/infra-mapa.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/jquery/jquery-ui-1.13.2/jquery-ui.min.css?1.13.2" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/jquery/jquery-ui-1.13.2/jquery-ui.structure.min.css?1.13.2" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/jquery/jquery-ui-1.13.2/jquery-ui.theme.min.css?1.13.2" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/multiple-select/multiple-select.min.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_js/modal/jquery.modalLink-1.0.0.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/bootstrap/bootstrap-4.6.2.min.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/bootstrap/menu-bootstrap.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/infra-global-esquema-3.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="/infra_css/esquemas/azul_celeste/infra-esquema-3.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/infra-local-esquema-3.css?6b8e6f31862ad981f3c48434c72089a0" rel="stylesheet" type="text/css" media="all"/>
+<style></style><style type="text/css">
+#divInfraCaptcha {margin:.3em 0;}
+#lblInfraCaptcha {margin-right:.5em;}
+#lblInfraCaptcha img {vertical-align:bottom;}
+#txtInfraCaptcha {vertical-align:top;font-size:1.8em;text-align:center;max-width:130px;margin-right:3px;padding:3px;height:50px;}
+</style><style type="text/css" >
+<!--/*--><![CDATA[/*><!--*/
+.colunaAcoes {display:none;}
+
+@media print {
+.infraBarraComandos, .infraBarraComandos *, .no-print, .no-print * {
+display: none !important;
+}
+}
+
+div.infraBarraSistemaE {width:90%}
+div.infraBarraSistemaD {width:5%}
+div.infraBarraComandos {width:99%}
+
+table caption {
+text-align:left !important;
+font-size: 1.2em;
+font-weight:bold;
+}
+
+.andamentoAberto {
+background-color:white;
+}
+
+.andamentoConcluido {
+background-color:white;
+}
+
+
+#tblCabecalho{margin-top:1;}
+#tblDocumentos {margin-top:1.5em;}
+#tblHistorico {margin-top:1.5em;}
+
+
+#divInfraModal{
+display: none;
+position: fixed;
+z-index: 1;
+padding-top: 100px;
+left: 0;
+top: 0;
+width: 50%;
+height: 50%;
+overflow: auto;
+}
+
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-image: url("imagens/bg_barra_sistema.jpg");
+color: white;
+}
+div {
+margin: 0 auto 0 auto;
+}
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+padding: 2px 16px;
+background-color: #5cb85c;
+color: white;
+}
+
+span.retiraAncoraPadraoAzul{font-size: .875rem;}
+
+/*]]>*/-->
+</style>
+<script type="text/javascript">var INFRA_PATH_CSS="/infra_css",INFRA_PATH_IMAGENS="/infra_css/imagens",INFRA_PATH_JS="/infra_js",INFRA_PATH_SVG="/infra_css/svg",INFRA_LUPA_TIPO_JANELA=2,INFRA_BARRA_TIPO_JANELA=1,INFRA_TIPO_ALERTA=1;</script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/jquery/jquery-3.7.0.min.js?3.7.0"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/jquery/jquery-ui-1.13.2/jquery-ui.min.js?1.13.2"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/multiple-select/multiple-select.min.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/ddslick/jquery.ddslick.min.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/modal/jquery.modalLink-1.0.0.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraPaginaEsquema3.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraBotaoMenu.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraUtil.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraCookie.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraUpload.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraTabelaDinamica.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraLupas.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraSelectEditavel.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraAjax.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/InfraTooltip.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/calendario/v2/InfraCalendario.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/arvore/InfraArvore.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" src="/infra_js/maskedpwd/MaskedPassword.min.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/bootstrap/bootstrap-4.6.2.min.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/bootstrap/infra-menu-bootstrap.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/touch/jquery.ui.touch-punch.min.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="utf-8" src="/infra_js/hotkeys/jquery.hotkeys.js?6b8e6f31862ad981f3c48434c72089a0"></script>
+<script type="text/javascript" charset="iso-8859-1" >
+var infraCaptchaHttpRequest;
+function infraGerarNovoCaptcha(url) {
+if (window.XMLHttpRequest) {
+infraCaptchaHttpRequest = new XMLHttpRequest();
+} else if (window.ActiveXObject) {
+try {
+infraCaptchaHttpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+}
+catch (e) {
+try {
+infraCaptchaHttpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+}
+catch (e) {}
+}
+}
+if (!infraCaptchaHttpRequest) {
+alert('Não foi possível fazer a chamada AJAX para geração de um novo captcha. Tente novamente por favor.');
+return false;
+}
+infraCaptchaHttpRequest.onreadystatechange = infraAtualizarImagemCaptcha;
+infraCaptchaHttpRequest.open('GET', INFRA_PATH_JS + url);
+infraCaptchaHttpRequest.send();
+}
+function infraAtualizarImagemCaptcha() {
+if (infraCaptchaHttpRequest.readyState === 4) {
+if (infraCaptchaHttpRequest.status === 200) {
+document.getElementById('imgCaptcha').src = infraCaptchaHttpRequest.responseText;
+} else {
+alert('Houve um erro durante a requisição da um novo captcha. Tente novamente por favor.');
+}
+}
+}
+</script>
+<script type="text/javascript" charset="iso-8859-1" >
+<!--//--><![CDATA[//><!--
+
+
+function inicializar(){
+
+infraEfeitoTabelas();
+}
+
+
+
+$(document).unbind("keyup").keyup(function(e){
+e.preventDefault();
+var code = e.which;
+if(code==13){
+var modal = document.getElementById('divInfraModal');
+if(modal.style.display == "block"){
+fecharPdfModal();
+gerarPdf();
+}
+}
+});
+
+function gerarPdfModal(){
+
+if (document.getElementById('hdnInfraItensSelecionados').value==''){
+alert('Nenhum documento selecionado.');
+return;
+}
+
+document.getElementById('divInfraModal').style.display = "block";
+document.getElementById('txtInfraCaptcha').focus();
+
+}
+
+function fecharPdfModal(){
+var modal = document.getElementById('divInfraModal');
+modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+var modal = document.getElementById('divInfraModal');
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+
+
+function gerarPdf() {
+if (document.getElementById('hdnInfraItensSelecionados').value == ''){
+alert('Nenhum documento selecionado.');
+return false;
+}
+
+
+if (document.getElementById('txtInfraCaptcha').value.length != 6){
+$('.modal-alert-msg').html('<p class="alert alert-warning">Informe o código de confirmação!</p>');
+document.getElementById('txtInfraCaptcha').focus();
+return false;
+}
+
+if(document.getElementById('hdnInfraItensSelecionados').value != '' && document.getElementById('txtInfraCaptcha').value.length == 6){
+fecharPdfModal();
+infraExibirAviso(false);
+document.getElementById('hdnFlagGerar').value = '1';
+document.getElementById('frmProcessoAcessoExternoConsulta').submit();
+}
+}
+
+
+//--><!]]>
+</script>
+</head>
+<body onload="inicializar();" >
+<button onclick="infraMoverParaTopo()" id="btnInfraTopo" class="infraButton infraCorBarraSistema" ><img src="/infra_css/svg/topo.svg?2.29.0" title="Voltar ao Topo" alt="Voltar ao Topo" tabindex="32767"></button>
+<div id="divInfraAreaGlobal" class="vh-100 vw-100 d-flex flex-column m-0 border-0" >
+
+<nav id="navInfraBarraNavegacao" class=" navbar navbar-expand-md infraBarraNavegacao infraCorBarraSistema p-0">
+<div id="divInfraBarraSistema" class="flex-column w-100 h-100 infraBarraSistema" >
+<div id="divInfraBarraSistemaLinha"></div>
+<h6 class="pl-3 mb-0 mx-0 d-none d-md-block infraCorBarraSuperior">INSTITUTO DO PATRIMÔNIO HISTÓRICO E ARTÍSTICO NACIONAL</h6>
+<h6 class="pl-3 mb-0 mx-0 d-md-none infraCorBarraSuperior">IPHAN</h6>
+
+<div id="divInfraBarraSistemaMovel" class="flex-row d-flex pb-0 pl-3 d-md-none media infraBarraSistemaMovel">
+<div class="d-flex flex-grow-1 infraBarraSistemaMovelE" >
+<div class="align-self-center mt-1">
+<span id="spnInfraIdentificacaoSistema"><img src="svg/sei_barra.svg?6b8e6f31862ad981f3c48434c72089a0" title="Sistema Eletrônico de Informações"/></span>
+</div>
+</div>
+<div class="infraBarraSistemaMovelD d-flex flex-shrink-0">
+</div>
+</div>
+<div id="divInfraBarraSistemaPadrao" class="navbar p-0 infraCorBarraSistema collapse navbar-collapse align-self-center infraBarraSistemaPadrao">
+<div id="divInfraBarraSistemaPadraoE" class="nav-link p-0 pl-3 d-none d-md-flex infraBarraSistemaPadraoE">
+<div class="align-self-center"><img src="svg/sei_barra.svg?6b8e6f31862ad981f3c48434c72089a0" title="Sistema Eletrônico de Informações"/></div>
+</div>
+<div id="divInfraBarraSistemaPadraoD" class="navbar-nav flex-grow-1 justify-content-end infraBarraSistemaPadraoD">
+</div>
+</div>
+</div>
+</nav>
+<div id="divInfraAreaTela" style="min-height:0;" class="w-100 flex-grow-1 d-flex flex-row divInfraAreaTela">
+<div id="divInfraAreaTelaD" class=" flex-grow-1 px-3" >
+<div id="divInfraBarraLocalizacao" class="infraBarraLocalizacao" tabindex="450">Pesquisa Processual</div>
+
+<form id="frmProcessoAcessoExternoConsulta" method="post">
+
+<div id="divInfraModal" class="infraFundoTransparente" style="position: fixed; width: 100%; height: 100%; visibility: visible; background-image: none; background: rgba(0,0,0,.2); z-index: 9999">
+<div id="divCaptcha" class="infraAreaDados" style="margin: auto; position: absolute; top: -200px; left: 0; bottom: 0; right: 0; height: 280px; width: 400px; background-color: white; box-shadow: 0px 5px 10px rgba(0,0,0,.3)">
+<div class="modal-header d-flex justify-content-end align-items-center" style="background: #155f9b; border-radius: 0px; padding: 5px 10px;">
+<img title="Fechar janela" onmouseover="this.src=INFRA_PATH_JS + '/modal/fechar_vermelho.png'" onmouseout="this.src=INFRA_PATH_JS + '/modal/fechar_branco.png'" src="/infra_js/modal/fechar_branco.png" onclick="fecharPdfModal();" tabindex="1" width="24">
+</div>
+<div class="modal-body p-4 text-center">
+<div class="row">
+<div class="col-12">
+<h6 class="font-weight-bold text-center">Digite o código da imagem:</h6>
+</div>
+</div>
+<div class="row">
+<div class="col-12">
+<div class="text-center">
+<div>
+<div id="divInfraCaptcha" class="infraAreaDados" style="height:5em;">
+<div style="float:left;">
+<label id="lblInfraCaptcha" for="txtInfraCaptcha" class="infraLabelObrigatorio">
+<img id="imgCaptcha" src="data:image/png;base64,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" title="Informe o código de confirmação" /></label>
+</div>
+<div style="width:28px;float:left;">
+<img id="infraImgRecarregarCaptcha" title="Regerar as letras do código de confirmação" onclick="infraGerarNovoCaptcha('/infra_gerar_captcha.php?r=s&c=c0200bbef4075d88d30cbdaadfde6c88ddc82a457dffc6bf88e9570d05fa28fb&i=PESQUISA_PROCESSUAL1789519502246');" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXJlbG9hZCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0yIDEyQzIgMTYuOTcgNi4wMyAyMSAxMSAyMUMxMy4zOSAyMSAxNS42OCAyMC4wNiAxNy40IDE4LjRMMTUuOSAxNi45QzE0LjYzIDE4LjI1IDEyLjg2IDE5IDExIDE5QzQuNzYgMTkgMS42NCAxMS40NiA2LjA1IDcuMDVDMTAuNDYgMi42NCAxOCA1Ljc3IDE4IDEySDE1TDE5IDE2SDE5LjFMMjMgMTJIMjBDMjAgNy4wMyAxNS45NyAzIDExIDNDNi4wMyAzIDIgNy4wMyAyIDEyWiIgLz48L3N2Zz4=" tabindex="501"/>
+<audio id="infraAudioCaptchaMedia"><source id="infraSrcAudioCaptcha" src="/infra_js/infra_gerar_audio_captcha.php?v=5&i=PESQUISA_PROCESSUAL1789519502246"></audio>
+<img id="infraImgAudioCaptcha" title="Ouvir a narração das letras do código de confirmação" onclick="infraGerarAudioCaptcha('infraAudioCaptchaMedia', 'infraSrcAudioCaptcha', '5', 'PESQUISA_PROCESSUAL1789519502246')" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXZvbHVtZS1oaWdoIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE0LDMuMjNWNS4yOUMxNi44OSw2LjE1IDE5LDguODMgMTksMTJDMTksMTUuMTcgMTYuODksMTcuODQgMTQsMTguN1YyMC43N0MxOCwxOS44NiAyMSwxNi4yOCAyMSwxMkMyMSw3LjcyIDE4LDQuMTQgMTQsMy4yM00xNi41LDEyQzE2LjUsMTAuMjMgMTUuNSw4LjcxIDE0LDcuOTdWMTZDMTUuNSwxNS4yOSAxNi41LDEzLjc2IDE2LjUsMTJNMyw5VjE1SDdMMTIsMjBWNEw3LDlIM1oiIC8+PC9zdmc+" tabindex="501"/>
+
+</div>
+<div style="float:left;">
+<input type="text" id="txtInfraCaptcha" name="txtInfraCaptcha" class="infraText" value="" maxlength="6" tabindex="501"/>
+<input type="hidden" id="hdnInfraCaptcha" name="hdnInfraCaptcha" value="0" />
+</div>
+</div><br>
+<input type="hidden" id="hdnCId" name="hdnCId" class="infraText" value="PESQUISA_PROCESSUAL1789519502246"/>
+</div>
+</div>
+<div class="text-center">
+<button id="btnEnviarCaptcha" type="button" accesskey="G" name="btnEnviarCaptcha" value="Gerar PDF" onclick="gerarPdf();" class="infraButton" style="width: 137px"><span class="infraTeclaAtalho">G</span>erar PDF</button>
+</div>
+</div>
+</div>
+<div class="modal-alert-msg mt-2"></div>
+</div>
+</div>
+</div>
+
+<input type="hidden" id="hdnInfraTipoPagina" name="hdnInfraTipoPagina" value="3"/>
+<div id="divInfraBarraComandosSuperior" class="infraBarraComandos">
+<button tabindex="451" type="button" accesskey="G" name="btnGerarPdfModal" value="Gerar PDF" onclick="gerarPdfModal();" class="infraButton"><span class="infraTeclaAtalho">G</span>erar PDF</button>
+<button tabindex="452" type="button" accesskey="I" id="btnImprimir" value="Imprimir" onclick="infraImprimirDiv('divInfraAreaTelaD');" class="infraButton"><span class="infraTeclaAtalho">I</span>mprimir</button>
+</div>
+<table id="tblCabecalho" width="99.3%" class="infraTable" summary="Cabeçalho de Processo" >
+<tr><th class="infraTh" colspan="2">Autuação</th></tr>
+<tr class="infraTrClara"><td width="20%">Processo:</td><td>01450.001620/2026-78</td></tr>
+<tr class="infraTrClara"><td width="20%">Tipo:</td><td>LICENCIAMENTO AMBIENTAL - IN n° 006/2025</td></tr>
+<tr class="infraTrClara"><td width="20%">Data de Geração:</td><td>05/02/2026</td></tr>
+<tr class="infraTrClara"><td width="20%">Interessados:</td><td> &nbsp;</td></tr>
+</table>
+<p style="font-size: 1.2em;"> Processo (ou Documento) de acesso restrito. Para acessá-lo ou obter demais informações, entre em contato com a unidade do Iphan responsável pelo processo.</p><div id="divInfraAreaTabela" class="infraAreaTabela" >
+<table id="tblDocumentos" width="99.3%" class="infraTable" summary="Lista de Documentos" >
+<caption class="infraCaption" >Lista de Protocolos (33 registros):</caption>
+<tr>
+<th class="infraTh no-print" width="1%"><a href="javascript:void(0);" id="lnkInfraCheck" onclick="infraSelecaoMultipla('Infra');" tabindex="1001"><img src="/infra_css/svg/check.svg" id="imgInfraCheck" title="Selecionar Tudo" alt="Selecionar Tudo" class="infraImg"/></a></th>
+<th class="infraTh" width="15%">Processo / Documento</th>
+<th class="infraTh" width="15%">Tipo</th>
+<th class="infraTh" width="15%">Data</th>
+<th class="infraTh" width="15%">Data de Inclusão</th>
+<th class="infraTh" width="15%">Unidade</th>
+</tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-7966638" name="ID-7966638"></a><input class="infraCheckbox" id="chkInfraItem0" name="chkInfraItem0" tabindex="1002" title="Anotação de Responsabilidade Técnica (ART)" type="checkbox" value="7966638" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5Twxb_a-vNA0hQwHXpKakwp0X_FowUa8WeqHmzKDnLEVIWoAPS3Rz_iEfcAGvtbs0KHBJCVXLIAYMsTWZcdgEha');" alt="Anotação de Responsabilidade Técnica (ART)" title="Anotação de Responsabilidade Técnica (ART)" class="ancoraPadraoAzul">7117316</a></td><td align="center">Anotação de Responsabilidade Técnica (ART) </td><td align="center">05/02/2026</td><td align="center">05/02/2026</td><td align="center"><a alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td class="no-print">&nbsp;</td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5TVEl44YjxPwFvenGsUTG_NVvS1JaCX2hMAVLcuDep83k7d5gbdW64wBK29PBZvC1s9m-rJY-aabZQRhRW4zfiM');" alt="Arquivo ADA" title="Arquivo ADA" class="ancoraPadraoAzul">7117317</a></td><td align="center">Arquivo ADA </td><td align="center">05/02/2026</td><td align="center">05/02/2026</td><td align="center"><a alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td class="no-print">&nbsp;</td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5Q8bpTWWT0n336ulKSvKn1m-Pi3XlPSDj_R79yuDuI6Nz6355getmg3V1YlZ4RL4KgdVM9KuoS_Ph5SAgfS412G');" alt="Arquivo AID" title="Arquivo AID" class="ancoraPadraoAzul">7117318</a></td><td align="center">Arquivo AID </td><td align="center">05/02/2026</td><td align="center">05/02/2026</td><td align="center"><a alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-7966641" name="ID-7966641"></a><input class="infraCheckbox" id="chkInfraItem1" name="chkInfraItem1" tabindex="1003" title="Anexo" type="checkbox" value="7966641" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QoHcoyFDfIIKXnJcR6I4CboNDGK--T6a3ReV_e3YPbc01laAC8z3kbv546oN3zYW17vG4cRg7PYCY4_4nNg33t');" alt="Anexo" title="Anexo" class="ancoraPadraoAzul">7117319</a></td><td align="center">Anexo </td><td align="center">05/02/2026</td><td align="center">05/02/2026</td><td align="center"><a alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-7966642" name="ID-7966642"></a><input class="infraCheckbox" id="chkInfraItem2" name="chkInfraItem2" tabindex="1004" title="Ficha de Caracterização de Atividade" type="checkbox" value="7966642" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QcKtCrLShiT--P_atgQOyaIX3ygOLh_w8kUc52EjReF6qTMEtza9FKj1KbRxpJ0mezsjZsgVpwH6UMb6_S6MEl');" alt="Ficha de Caracterização de Atividade" title="Ficha de Caracterização de Atividade" class="ancoraPadraoAzul">7117320</a></td><td align="center">Ficha de Caracterização de Atividade </td><td align="center">05/02/2026</td><td align="center">05/02/2026</td><td align="center"><a alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-7966643" name="ID-7966643"></a><input class="infraCheckbox" id="chkInfraItem3" name="chkInfraItem3" tabindex="1005" title="Termo" type="checkbox" value="7966643" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QcU3rtLBPGfwUHP0CBTyJaVQfhbezv-rGENxwkKHVt9kG78c816NNcIja3dSF2ompx9Z_pSUbajb79hCqgwD1i');" alt="Termo" title="Termo" class="ancoraPadraoAzul">7117321</a></td><td align="center">Termo </td><td align="center">05/02/2026</td><td align="center">05/02/2026</td><td align="center"><a alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-7966644" name="ID-7966644"></a><input class="infraCheckbox" id="chkInfraItem4" name="chkInfraItem4" tabindex="1006" title="Termo" type="checkbox" value="7966644" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5R-iMKg8KuUYGmzJvqc02WquMjaesG_AiGbHn2ZPY2XGatBPzSJ0UOGz9u_cmZNi4XiBGf9OHhTKYOXLxdw9H5h');" alt="Termo" title="Termo" class="ancoraPadraoAzul">7117322</a></td><td align="center">Termo </td><td align="center">05/02/2026</td><td align="center">05/02/2026</td><td align="center"><a alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-7968891" name="ID-7968891"></a><input class="infraCheckbox" id="chkInfraItem5" name="chkInfraItem5" tabindex="1007" title="Despacho" type="checkbox" value="7968891" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5STFjYhwPo8GBJFhnaJevaS98kLkI1kIXJ_cvPJDnCaFnCCgEoMAECAe2OO92TCr46u7ct0GysOcsIc60ThLxk7');" alt="Despacho" title="Despacho" class="ancoraPadraoAzul">7119470</a></td><td align="center">Despacho 1619</td><td align="center">05/02/2026</td><td align="center">05/02/2026</td><td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-7971140" name="ID-7971140"></a><input class="infraCheckbox" id="chkInfraItem6" name="chkInfraItem6" tabindex="1008" title="Despacho" type="checkbox" value="7971140" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5S171DNZjAmiifqfGYA6yIGv39FygOs6lhJ8eVHWduBSlicWQjZwOjEOY6I-0gIXb2UllG7mv7GwVQ-AxdHPrM6');" alt="Despacho" title="Despacho" class="ancoraPadraoAzul">7121628</a></td><td align="center">Despacho 360</td><td align="center">06/02/2026</td><td align="center">06/02/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8036766" name="ID-8036766"></a><input class="infraCheckbox" id="chkInfraItem7" name="chkInfraItem7" tabindex="1009" title="Parecer FCA Arq - IN 06/2025" type="checkbox" value="8036766" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5S2vz1IHN5Hzi1cbpmCj9YrMY1sILc4_F7VQXrCN8JOtUtpHZI0dHSLqVNGSe9GeGqjlfdre8SM6L_8VEjCYiWh');" alt="Parecer FCA Arq - IN 06/2025" title="Parecer FCA Arq - IN 06/2025" class="ancoraPadraoAzul">7184851</a></td><td align="center">Parecer FCA Arq - IN 06/2025 265</td><td align="center">03/03/2026</td><td align="center">03/03/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8042656" name="ID-8042656"></a><input class="infraCheckbox" id="chkInfraItem8" name="chkInfraItem8" tabindex="1010" title="Ofício" type="checkbox" value="8042656" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5Rl6g7W82nzyWLSbONnYr4y-xHDlVt9VRb-jAlzrJ9UlANHAp2RZ-_9abMQ-teuNOLrvEtQqdrtpeE-JusowWTg');" alt="Ofício" title="Ofício" class="ancoraPadraoAzul">7190542</a></td><td align="center">Ofício 463</td><td align="center">03/03/2026</td><td align="center">03/03/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8048789" name="ID-8048789"></a><input class="infraCheckbox" id="chkInfraItem9" name="chkInfraItem9" tabindex="1011" title="Termo de Referência Específico IN 06/2025" type="checkbox" value="8048789" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5RCjL_SjJN_LQC4-T7eMFyloB2DMobxs37TVAFZQC2QWrkYtAQKCG2r_qS2bXMhtOJZ81CUDInAlmys4HyjwQVB');" alt="Termo de Referência Específico IN 06/2025" title="Termo de Referência Específico IN 06/2025" class="ancoraPadraoAzul">7196454</a></td><td align="center">Termo de Referência Específico IN 06/2025 541</td><td align="center">11/03/2026</td><td align="center">11/03/2026</td><td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8049152" name="ID-8049152"></a><input class="infraCheckbox" id="chkInfraItem10" name="chkInfraItem10" tabindex="1012" title="Ofício" type="checkbox" value="8049152" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QtWvHFXWcxOuCMpEo_kZgH1grhZ5CsdZUtz0yHz49FxaaQrrihfsUHAhkM4ni7iYBFhanJItxeLzEYVG9ojKmT');" alt="Ofício" title="Ofício" class="ancoraPadraoAzul">7196797</a></td><td align="center">Ofício 1198</td><td align="center">11/03/2026</td><td align="center">11/03/2026</td><td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8071287" name="ID-8071287"></a><input class="infraCheckbox" id="chkInfraItem11" name="chkInfraItem11" tabindex="1013" title="E-mail" type="checkbox" value="8071287" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5RNI7lVWcEjKGaeV4ru-xQhj_agfcgyQEZgSfoyNeF0cF5hnp1j_c8xE4ELEJB8f09GyYfDJZo_0meXKFr3apMf');" alt="E-mail" title="E-mail" class="ancoraPadraoAzul">7218133</a></td><td align="center">E-mail </td><td align="center">11/03/2026</td><td align="center">11/03/2026</td><td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8206536" name="ID-8206536"></a><input class="infraCheckbox" id="chkInfraItem12" name="chkInfraItem12" tabindex="1014" title="Recibo" type="checkbox" value="8206536" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5RHA0XiL7LfEPlYQXtodgVZ1gzF-o1jcdhgleC0sJy8vsG9jrLEtbJUqdfwPYE3umNbYiK7gKjsE5EUOvrch15r');" alt="Recibo" title="Recibo" class="ancoraPadraoAzul">7338996</a></td><td align="center">Recibo </td><td align="center">17/04/2026</td><td align="center">17/04/2026</td><td align="center"><a alt="Divisão de Geoprocessamento" title="Divisão de Geoprocessamento" class="ancoraSigla">DIVGEO</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8206570" name="ID-8206570"></a><input class="infraCheckbox" id="chkInfraItem13" name="chkInfraItem13" tabindex="1015" title="Requerimento" type="checkbox" value="8206570" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5TVPWhCK4L5IedqEgaMrHjpkW1L33eXdxdxTkRWPZKfH6Sg-oAV0FS6VqEmVTZXrEtFFzqlu9i6x0aOVdolO6LR');" alt="Requerimento" title="Requerimento" class="ancoraPadraoAzul">7339029</a></td><td align="center">Requerimento </td><td align="center">17/04/2026</td><td align="center">17/04/2026</td><td align="center"><a alt="Divisão de Geoprocessamento" title="Divisão de Geoprocessamento" class="ancoraSigla">DIVGEO</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td class="no-print">&nbsp;</td><td align="center" ><span class="retiraAncoraPadraoAzul">7339056</span><img src="/infra_css/imagens/espaco.gif"><img src="imagens/sei_chave_restrito.svg" style="vertical-align: middle;" title="Acesso Restrito. &#13Titularidade dados pessoais garantida LGPD (Lei nº 13.709/18, Art. 17)"></td><td align="center">Documentação </td><td align="center">17/04/2026</td><td align="center">17/04/2026</td><td align="center"><a alt="Divisão de Geoprocessamento" title="Divisão de Geoprocessamento" class="ancoraSigla">DIVGEO</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8232551" name="ID-8232551"></a><input class="infraCheckbox" id="chkInfraItem14" name="chkInfraItem14" tabindex="1016" title="Despacho" type="checkbox" value="8232551" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QOeNbMjskfMlxdx_VyiwaTye0tm2nTOBrd6_Hd58H_hH8uJ6GLPWZ2wMOX3VpCg7uLaRr7eyWV-TjUVa1lINIS');" alt="Despacho" title="Despacho" class="ancoraPadraoAzul">7364118</a></td><td align="center">Despacho 5794</td><td align="center">28/04/2026</td><td align="center">28/04/2026</td><td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8246551" name="ID-8246551"></a><input class="infraCheckbox" id="chkInfraItem15" name="chkInfraItem15" tabindex="1017" title="Despacho" type="checkbox" value="8246551" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5SMuxXEHqVax6DTS9zJhKuMdgfJjyAlK4LiI6z4OGSJ_3eyL1gINnEq84uoF2vJeLJ8hTymFf9j4qwe2zhZNRbl');" alt="Despacho" title="Despacho" class="ancoraPadraoAzul">7377659</a></td><td align="center">Despacho 1045</td><td align="center">04/05/2026</td><td align="center">04/05/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8445619" name="ID-8445619"></a><input class="infraCheckbox" id="chkInfraItem16" name="chkInfraItem16" tabindex="1018" title="Recibo" type="checkbox" value="8445619" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QnB0Zp9uXSywetydWqkCBsvGgsgoujRrnqLJyEFi7rg2ktRanlMs0HV6C2GPo4-HbvNg4NF4anxUMUKMbiMZse');" alt="Recibo" title="Recibo" class="ancoraPadraoAzul">7552758</a></td><td align="center">Recibo </td><td align="center">23/06/2026</td><td align="center">23/06/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8446197" name="ID-8446197"></a><input class="infraCheckbox" id="chkInfraItem17" name="chkInfraItem17" tabindex="1019" title="Requerimento" type="checkbox" value="8446197" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5SRP9UAPNCfefEaNu11gQAYCIjfcDtiAMOSOd9mRorgWKdvD2TpjbBcI6cE_5_sDxwD33Ne-8z8hCmGPLfIjBfU');" alt="Requerimento" title="Requerimento" class="ancoraPadraoAzul">7553308</a></td><td align="center">Requerimento </td><td align="center">23/06/2026</td><td align="center">23/06/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8446535" name="ID-8446535"></a><input class="infraCheckbox" id="chkInfraItem18" name="chkInfraItem18" tabindex="1020" title="Dados pessoais ou dados pessoais sensíveis" type="checkbox" value="8446535" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5R6UMCG2VBci-cB8Ar7QBflkMM3yDZxfvciidbh4hPL2NHqUzJDughw2Hvbclw4ss5awfziMcUig_qo1Ycb-mu4');" alt="Dados pessoais ou dados pessoais sensíveis" title="Dados pessoais ou dados pessoais sensíveis" class="ancoraPadraoAzul">7553626</a></td><td align="center">Dados pessoais ou dados pessoais sensíveis </td><td align="center">23/06/2026</td><td align="center">23/06/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8446776" name="ID-8446776"></a><input class="infraCheckbox" id="chkInfraItem19" name="chkInfraItem19" tabindex="1021" title="Pedido" type="checkbox" value="8446776" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5S9Bf68VLvs7RnppRj3JU2e_seh2AHeKrVrBnL6iKAfITwR4EUGd9kGQFJhU9arbQ1LDfgauNHKPO7TZfXPlykX');" alt="Pedido" title="Pedido" class="ancoraPadraoAzul">7553854</a></td><td align="center">Pedido </td><td align="center">23/06/2026</td><td align="center">23/06/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8599702" name="ID-8599702"></a><input class="infraCheckbox" id="chkInfraItem20" name="chkInfraItem20" tabindex="1022" title="Despacho" type="checkbox" value="8599702" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QQadxEm-p8DFKGEkyve3QdG3pwrxyWpQ1ILyGV84q3o9GjRwd-xdw1xtwDtmTj6gNV_gE6qae0NSbiCudE1dUd');" alt="Despacho" title="Despacho" class="ancoraPadraoAzul">7701316</a></td><td align="center">Despacho 1926</td><td align="center">25/08/2026</td><td align="center">25/08/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8616577" name="ID-8616577"></a><input class="infraCheckbox" id="chkInfraItem21" name="chkInfraItem21" tabindex="1023" title="Parecer PAIPA Arq - IN 06/2025" type="checkbox" value="8616577" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QP36tnybXuRj4qiviONi9NvlkQHlcWF053uQzcU6USyL_BCotqak7RFn2W2HpFz5oIjdVIOneyBuuFx5YvKwbD');" alt="Parecer PAIPA Arq - IN 06/2025" title="Parecer PAIPA Arq - IN 06/2025" class="ancoraPadraoAzul">7717596</a></td><td align="center">Parecer PAIPA Arq - IN 06/2025 573</td><td align="center">11/08/2026</td><td align="center">11/08/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8678842" name="ID-8678842"></a><input class="infraCheckbox" id="chkInfraItem22" name="chkInfraItem22" tabindex="1024" title="Ofício" type="checkbox" value="8678842" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5T6RcZ6WAnlrC6SwMbKR5r70blPokbq5Dn5XbtfqAMgEGjMW-_mlQcJvV0nPN-eMWXPmFvLLZJjpl2oBMnJ5efl');" alt="Ofício" title="Ofício" class="ancoraPadraoAzul">7768911</a></td><td align="center">Ofício 1741</td><td align="center">25/08/2026</td><td align="center">25/08/2026</td><td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8688814" name="ID-8688814"></a><input class="infraCheckbox" id="chkInfraItem23" name="chkInfraItem23" tabindex="1025" title="Ofício" type="checkbox" value="8688814" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5RY10zvEPpgnpxK74PzXeJYkz-f8RenX8XbWqXHuFShMakRfTBUoFafKxI7E97_6WjNiczVtCPTKG5oGNv61dIK');" alt="Ofício" title="Ofício" class="ancoraPadraoAzul">7778488</a></td><td align="center">Ofício 4259</td><td align="center">01/09/2026</td><td align="center">01/09/2026</td><td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8688856" name="ID-8688856"></a><input class="infraCheckbox" id="chkInfraItem24" name="chkInfraItem24" tabindex="1026" title="Ofício" type="checkbox" value="8688856" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5TCICL9YX-f5-B0Dd1wZ6yTk6f19afMPmZ68r3iDbT-USg5L8jCieT78BuMID2JjvT8VV4UtKZGknjUzISVv_iN');" alt="Ofício" title="Ofício" class="ancoraPadraoAzul">7778530</a></td><td align="center">Ofício 4260</td><td align="center">01/09/2026</td><td align="center">01/09/2026</td><td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8718556" name="ID-8718556"></a><input class="infraCheckbox" id="chkInfraItem25" name="chkInfraItem25" tabindex="1027" title="E-mail" type="checkbox" value="8718556" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QXzt77R0dYU9Qzn5hLy42Ke2K8je5CajiBp0uUZQfdqhe0bHK972foJjLv9meA6LG77E2OjE8wqyfdU7XL0uDn');" alt="E-mail" title="E-mail" class="ancoraPadraoAzul">7798586</a></td><td align="center">E-mail </td><td align="center">02/09/2026</td><td align="center">02/09/2026</td><td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8721124" name="ID-8721124"></a><input class="infraCheckbox" id="chkInfraItem26" name="chkInfraItem26" tabindex="1028" title="Parecer Técnico" type="checkbox" value="8721124" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5SeHNTKD1dSsy1PTTHDXxW3TP__FDDZedQ_h40tqprOIWe-nhtyvYsqsftr7fcxdLGWd5iwigd5iqwEze356uZT');" alt="Parecer Técnico" title="Parecer Técnico" class="ancoraPadraoAzul">7801087</a></td><td align="center">Parecer Técnico 2226</td><td align="center">04/09/2026</td><td align="center">04/09/2026</td><td align="center"><a alt="Coordenação de Identificação e Reconhecimento" title="Coordenação de Identificação e Reconhecimento" class="ancoraSigla">COIR</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8732766" name="ID-8732766"></a><input class="infraCheckbox" id="chkInfraItem27" name="chkInfraItem27" tabindex="1029" title="Portaria" type="checkbox" value="8732766" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QzOZDATsPxg-S7jkqNHfMHhE0eUcyKHu0WGfYWr_L_0Fz7gy4-lX9pjSz0axXaI32rty2p66Xt0TY1RQUulKwK');" alt="Portaria" title="Portaria" class="ancoraPadraoAzul">7812246</a></td><td align="center">Portaria Nº 85 DE 04 DE SETEMBRO DE 2026</td><td align="center">08/09/2026</td><td align="center">08/09/2026</td><td align="center"><a alt="Coordenação de Identificação e Reconhecimento" title="Coordenação de Identificação e Reconhecimento" class="ancoraSigla">COIR</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8738037" name="ID-8738037"></a><input class="infraCheckbox" id="chkInfraItem28" name="chkInfraItem28" tabindex="1030" title="Ofício" type="checkbox" value="8738037" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5R6HpJd4inWjpg96vGTGW68GqxUQNg1ILcxoY7D_FaO8IZlnCYAE5Ow1Qx0aXVFo6KVVdzCig9DpbUfdi7AM0J1');" alt="Ofício" title="Ofício" class="ancoraPadraoAzul">7817312</a></td><td align="center">Ofício 2390</td><td align="center">09/09/2026</td><td align="center">09/09/2026</td><td align="center"><a alt="Centro Nacional de Arqueologia" title="Centro Nacional de Arqueologia" class="ancoraSigla">CNA</a></td><td align="center" class="colunaAcoes"></td></tr><tr class="infraTrClara"><td align="center" class="no-print"><a id="lnkInfraID-8744892" name="ID-8744892"></a><input class="infraCheckbox" id="chkInfraItem29" name="chkInfraItem29" tabindex="1031" title="E-mail" type="checkbox" value="8744892" onclick="infraSelecionarItens(this,'Infra');"/></td><td align="center" style="padding-right:22px"><a href="javascript:void(0);" onclick="window.open('md_pesq_documento_consulta_externa.php?9LibXMqGnN7gSpLFOOgUQFziRouBJ5VnVL5b7-UrE5QJl9bGCFwIBtkWUCN-4Q-J8CcaDf8ItWfhqh3sRHZR6-hVwhJkeZRO_6ddTHOdRDKyeCfJ23DdM6RlbBhXrbik');" alt="E-mail" title="E-mail" class="ancoraPadraoAzul">7823860</a></td><td align="center">E-mail </td><td align="center">10/09/2026</td><td align="center">10/09/2026</td><td align="center"><a alt="Centro Nacional de Arqueologia" title="Centro Nacional de Arqueologia" class="ancoraSigla">CNA</a></td><td align="center" class="colunaAcoes"></td></tr></table>
+</div>
+
+<input type="hidden" id="hdnInfraNroItens" name="hdnInfraNroItens" value="30"/>
+<input type="hidden" id="hdnInfraItemId" name="hdnInfraItemId" value=""/>
+<input type="hidden" id="hdnInfraItens" name="hdnInfraItens" value="7966638,7966641,7966642,7966643,7966644,7968891,7971140,8036766,8042656,8048789,8049152,8071287,8206536,8206570,8232551,8246551,8445619,8446197,8446535,8446776,8599702,8616577,8678842,8688814,8688856,8718556,8721124,8732766,8738037,8744892"/>
+<input type="hidden" id="hdnInfraItensHash" name="hdnInfraItensHash" value=""/>
+<input type="hidden" id="hdnInfraItensSelecionados" name="hdnInfraItensSelecionados" value=""/>
+
+<input type="hidden" id="hdnInfraSelecoes" name="hdnInfraSelecoes" value="Infra"/>
+
+<input type="hidden" id="hdnInfraCampoOrd" name="hdnInfraCampoOrd" value="Registro"/>
+<input type="hidden" id="hdnInfraTipoOrd" name="hdnInfraTipoOrd" value="ASC"/>
+<table id="tblHistorico" width="99.3%" class="infraTable" summary="Histórico de Andamentos">
+<caption class="infraCaption">Lista de Andamentos (47 registros):</caption>
+<tr>
+<th class="infraTh" width="20%">Data/Hora</th>
+<th class="infraTh" width="10%">Unidade</th>
+<th class="infraTh">Descrição</th>
+</tr><tr class="andamentoAberto" data-atividade="41525930">
+<td align="center">14/09/2026 08:13</td>
+<td align="center"><a alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41525334">
+<td align="center">14/09/2026 00:22</td>
+<td align="center"><a alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41525327">
+<td align="center">14/09/2026 00:15</td>
+<td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41492303">
+<td align="center">10/09/2026 16:15</td>
+<td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Centro Nacional de Arqueologia" title="Centro Nacional de Arqueologia" class="ancoraSigla">CNA</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41446829">
+<td align="center">09/09/2026 09:19</td>
+<td align="center"><a alt="Centro Nacional de Arqueologia" title="Centro Nacional de Arqueologia" class="ancoraSigla">CNA</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41445341">
+<td align="center">09/09/2026 08:22</td>
+<td align="center"><a alt="Centro Nacional de Arqueologia" title="Centro Nacional de Arqueologia" class="ancoraSigla">CNA</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação de Identificação e Reconhecimento" title="Coordenação de Identificação e Reconhecimento" class="ancoraSigla">COIR</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41372366">
+<td align="center">03/09/2026 12:55</td>
+<td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td>
+
+<td>Conclusão do processo na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41356318">
+<td align="center">02/09/2026 16:22</td>
+<td align="center"><a alt="Coordenação de Identificação e Reconhecimento" title="Coordenação de Identificação e Reconhecimento" class="ancoraSigla">COIR</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41355068">
+<td align="center">02/09/2026 16:02</td>
+<td align="center"><a alt="Coordenação de Identificação e Reconhecimento" title="Coordenação de Identificação e Reconhecimento" class="ancoraSigla">COIR</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Centro Nacional de Arqueologia" title="Centro Nacional de Arqueologia" class="ancoraSigla">CNA</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41354867">
+<td align="center">02/09/2026 15:59</td>
+<td align="center"><a alt="Centro Nacional de Arqueologia" title="Centro Nacional de Arqueologia" class="ancoraSigla">CNA</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41351349">
+<td align="center">02/09/2026 14:58</td>
+<td align="center"><a alt="Centro Nacional de Arqueologia" title="Centro Nacional de Arqueologia" class="ancoraSigla">CNA</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41244535">
+<td align="center">27/08/2026 16:07</td>
+<td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="41190917">
+<td align="center">25/08/2026 16:43</td>
+<td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40091032">
+<td align="center">26/06/2026 16:04</td>
+<td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40070587">
+<td align="center">26/06/2026 07:58</td>
+<td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40070582">
+<td align="center">26/06/2026 07:58</td>
+<td align="center"><a alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40039036">
+<td align="center">24/06/2026 15:03</td>
+<td align="center"><a alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40039028">
+<td align="center">24/06/2026 15:02</td>
+<td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40033100">
+<td align="center">24/06/2026 11:40</td>
+<td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40033077">
+<td align="center">24/06/2026 11:39</td>
+<td align="center"><a alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40026215">
+<td align="center">24/06/2026 08:30</td>
+<td align="center"><a alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Serviço de Protocolo Central do IPHAN" title="Serviço de Protocolo Central do IPHAN" class="ancoraSigla">PROT SEDE BSB</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="40014377">
+<td align="center">23/06/2026 15:07</td>
+<td align="center"><a alt="Serviço de Protocolo Central do IPHAN" title="Serviço de Protocolo Central do IPHAN" class="ancoraSigla">PROT SEDE BSB</a></td>
+
+<td>Reabertura do processo na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="39074205">
+<td align="center">30/04/2026 14:05</td>
+<td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="39057969">
+<td align="center">29/04/2026 18:50</td>
+<td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="39057968">
+<td align="center">29/04/2026 18:50</td>
+<td align="center"><a alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="39009347">
+<td align="center">28/04/2026 09:57</td>
+<td align="center"><a alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38890775">
+<td align="center">17/04/2026 16:12</td>
+<td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38887080">
+<td align="center">17/04/2026 15:10</td>
+<td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38887032">
+<td align="center">17/04/2026 15:09</td>
+<td align="center"><a alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38884675">
+<td align="center">17/04/2026 14:29</td>
+<td align="center"><a alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Serviço de Protocolo Central do IPHAN" title="Serviço de Protocolo Central do IPHAN" class="ancoraSigla">PROT SEDE BSB</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38884545">
+<td align="center">17/04/2026 14:26</td>
+<td align="center"><a alt="Serviço de Protocolo Central do IPHAN" title="Serviço de Protocolo Central do IPHAN" class="ancoraSigla">PROT SEDE BSB</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38878887">
+<td align="center">17/04/2026 11:32</td>
+<td align="center"><a alt="Serviço de Protocolo Central do IPHAN" title="Serviço de Protocolo Central do IPHAN" class="ancoraSigla">PROT SEDE BSB</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38878878">
+<td align="center">17/04/2026 11:32</td>
+<td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td>
+
+<td>Reabertura do processo na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoAberto" data-atividade="38352414">
+<td align="center">18/03/2026 20:11</td>
+<td align="center"><a alt="Divisão de Geoprocessamento" title="Divisão de Geoprocessamento" class="ancoraSigla">DIVGEO</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38236805">
+<td align="center">11/03/2026 17:16</td>
+<td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td>
+
+<td>Conclusão do processo na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38235665">
+<td align="center">11/03/2026 16:46</td>
+<td align="center"><a alt="Divisão de Geoprocessamento" title="Divisão de Geoprocessamento" class="ancoraSigla">DIVGEO</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38235654">
+<td align="center">11/03/2026 16:46</td>
+<td align="center"><a alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38235650">
+<td align="center">11/03/2026 16:46</td>
+<td align="center"><a alt="Coordenação Geral de Licenciamento Ambiental" title="Coordenação Geral de Licenciamento Ambiental" class="ancoraSigla">CGLic</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38125745">
+<td align="center">05/03/2026 09:59</td>
+<td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="38125732">
+<td align="center">05/03/2026 09:58</td>
+<td align="center"><a alt="Superintendência do IPHAN no Estado de São Paulo" title="Superintendência do IPHAN no Estado de São Paulo" class="ancoraSigla">IPHAN-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="37740788">
+<td align="center">05/02/2026 17:45</td>
+<td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="37731803">
+<td align="center">05/02/2026 14:35</td>
+<td align="center"><a alt="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" title="Coordenação Técnica do Iphan-SP Subdivisão de Arqueologia" class="ancoraSigla">COTEC ARQUEO IPHAN-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="37731782">
+<td align="center">05/02/2026 14:35</td>
+<td align="center"><a alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="37729825">
+<td align="center">05/02/2026 13:36</td>
+<td align="center"><a alt="Programa de Gestão dos Processos de Licenciamento Ambiental" title="Programa de Gestão dos Processos de Licenciamento Ambiental" class="ancoraSigla">PGLic-SP</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="37724316">
+<td align="center">05/02/2026 10:52</td>
+<td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td>
+
+<td>Processo recebido na unidade<span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="37722464">
+<td align="center">05/02/2026 10:17</td>
+<td align="center"><a alt="Coordenação de Gestão e Monitoramento Ambiental" title="Coordenação de Gestão e Monitoramento Ambiental" class="ancoraSigla">CGM</a></td>
+
+<td>Processo remetido pela unidade <a href="javascript:void(0);" alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a><span style="line-height:.5em"><br /></span></td></tr><tr class="andamentoConcluido" data-atividade="37718082">
+<td align="center">05/02/2026 08:18</td>
+<td align="center"><a alt="Sistema de Avaliação de Impacto ao Patrimônio Cultural" title="Sistema de Avaliação de Impacto ao Patrimônio Cultural" class="ancoraSigla">SAIP</a></td>
+
+<td>Processo público gerado<span style="line-height:.5em"><br /></span></td></tr></table><br /><input type="hidden" id="hdnFlagGerar" name="hdnFlagGerar" value="0" />
+</form>
+
+</div>
+</div>
+</div>
+<input type="hidden" id="hdnInfraPrefixoCookie" name="hdnInfraPrefixoCookie" value="IPHAN_SEI_"/>
+<div id="infraDivImpressao" class="infraImpressao"></div>
+<div id="infraBs-xs" class="d-none d-xs-block"></div>
+<div id="infraBs-sm" class="d-none d-sm-block"></div>
+<div id="infraBs-md" class="d-none d-md-block"></div>
+<div id="infraBs-lg" class="d-none d-lg-block"></div>
+</body>
+</html>
